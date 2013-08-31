@@ -18,7 +18,7 @@
         margin-left: 10px;
     }
     .row-fluid [class*="span"]:first-child [class*="span"]:first-child h5 {
-        color: #A3A708;
+        color: #bf9030;
         font-weight: bold;
     }
     .row-fluid [class*="span"] h5 {
