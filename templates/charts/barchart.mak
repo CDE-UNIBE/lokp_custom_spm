@@ -18,14 +18,14 @@
         shape-rendering: crispEdges;
     }
     .bar {
-        fill: #A3A708;
+        fill: #bf9030;
     }
     .bar:hover {
-        fill: #DBDB9B;
+        fill: #f4d494;
     }
 
     .valueShape {
-        fill: #A3A708;
+        fill: #bf9030;
         stroke: darkGrey;
     }
 
@@ -37,14 +37,14 @@
         color: #333333;
     }
     ul.chartNav li a:hover {
-        background-color: #DBDB9B;
+        background-color: #f4d494;
     }
     ul.chartNav li.active a {
-        background-color: #A3A708;
+        background-color: #bf9030;
         color: #white;
     }
     ul.chartNav li.active a:hover {
-        background-color: #A3A708;
+        background-color: #bf9030;
     }
 </style>
 </%def>
