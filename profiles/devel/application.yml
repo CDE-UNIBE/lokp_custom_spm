@@ -2,7 +2,7 @@ application:
   # Geometry is a GeoJSON object
   geometry:
     type: Polygon
-    coordinates: [[[-180, -84],[180, -84],[180, 84],[-180, 84],[-180, -84]]]
+    coordinates: [[[43.24, -11.95],[50.50, -11.95],[50.50, -25.59],[43.24, -25.59],[43.24, -11.95]]]
   name: "Land Matrix Knowledge Platform global edition"
   layers:
   - name: "Accessability"
