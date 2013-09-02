@@ -1,0 +1,90 @@
+fields:
+  # [C] 9: Stakeholder Info
+  9:
+    order: 1
+    # [C-THG] 9: Stakeholder Info
+    9:
+      order: 1
+      # [TG]
+      1:
+        # [K] 1: Stakeholder name
+        1:  
+          maintag: true
+          mandatory: true
+      # [TG]
+      2:
+        # [K] 2: Website
+        2:
+          maintag: true
+      # [TG]
+      3:
+        # [K] 3: Address
+        3:
+          maintag: true
+      # [TG]
+      4:
+        # [K] 4: Phone
+        4:
+          maintag: true
+      # [TG]
+      5:
+        # [K] 5: Country of origin
+        5:
+          maintag: true
+      # [TG]
+      6:
+        # [K] 6: Type of organisation
+        6:
+          maintag: true
+          mandatory: true
+      # [TG]
+      7:
+        # [K] 7: Year since involvement in Madagascar
+        7:
+          maintag: true
+      # [TG]
+      8:
+        # [K] 8: Number of local staff employed
+        8:
+          maintag: true
+      # [TG]
+      9:
+        # [K] 9: Number of expatriate staff employed
+        9:
+          maintag: true
+      # [TG]
+      10:
+        # [K] 10: Approximate annual turnover
+        10:
+          maintag: true
+      # [TG]
+      11:
+        # [K] 11: General mission of stakeholder
+        11:
+          maintag: true
+      # [TG]
+      12:
+        # [K] 12: Domain of Natural Resource Management
+        12:
+          maintag: true
+      # [TG]
+      13:
+        # [K] 13: Sector of Natural Resource Management
+        13:
+          maintag: true
+      # [TG, repeatable]
+      14:
+        repeat: true
+        # [K] 14: External factors influencing organisations activities in Madagascar
+        14:
+          maintag: true
+        # [K] 16: Ranking
+        16: null
+      # [TG, repeatable]
+      15:
+        repeat: true
+        # [K] 15: Institutions respected
+        15:
+          maintag: true
+        # [K] 16: Ranking
+        16: null
