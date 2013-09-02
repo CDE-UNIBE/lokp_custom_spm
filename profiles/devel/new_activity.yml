@@ -1,0 +1,188 @@
+fields:
+  # [C] 1: Activity Info
+  1:
+    order: 1
+    # [C-THG] 1: Activity Info
+    1:
+      order: 1
+      # [TG]
+      1:
+        # [K] 1: Name of activity
+        1:
+          maintag: true
+          mandatory: true
+      # [TG]
+      2:
+        # [K] 2: State of advancement
+        2:
+          maintag: true
+          mandatory: true
+      # [TG]
+      3:
+        # [K] 3: Start date
+        3:
+          maintag: true
+      # [TG]
+      4:
+        # [K] 4: End date
+        4:
+          maintag: true
+      # [TG]
+      5:
+        # [K] 5: Data source
+        5:
+          maintag: true
+    # [C-THG] 2: Spatial Data
+    2:
+      order: 2
+      # [TG]
+      map: "map"
+      # [TG]
+      1:
+        # [K] 6: Spatial Accuracy
+        6:
+          maintag: true
+      # [TG]
+      2:
+        # [K] 7: District
+        7:
+          maintag: true
+      # [TG]
+      3:
+        # [K] 8: Commune
+        8:
+          maintag: true
+      # [TG]
+      4:
+        # [K] 9: Fokotany
+        9:
+          maintag: true
+    # [C-THG] 3: Funding
+    3:
+      order: 3
+      # [TG, repeatable]
+      1:
+        repeat: true
+        # [K] 10: Donor
+        10:
+          maintag: true
+      # [TG]
+      2:
+        # [K] 11: Total project budget
+        11:
+          maintag: true
+      # [TG]
+      3:
+        # [K] 12: Average annual budget
+        12:
+          maintag: true
+    # [C-THG] 4: Focus
+    4:
+      order: 4
+      # [TG, repeatable]
+      1:
+        repeat: true
+        # [K] 13: Goals
+        13:
+          maintag: true
+      # [TG]
+      2:
+        # [K] 14: Land use
+        14:
+          maintag: true
+      # [TG]
+      3:
+        # [K] 15: Level of intervention
+        15:
+          maintag: true
+      # [TG, repeatable]
+      4:
+        repeat: true
+        # [K] 16: Why Madagascar
+        16:
+          maintag: true
+        # [K] 27: Ranking
+        27: null
+      # [TG, repeatable]
+      5:
+        repeat: true
+        # [K] 17: Why this exact location to implement this activity
+        17:
+          maintag: true
+        # [K] 27: Ranking
+        27: null
+    # [C-THG] 5: Ecosystem Services
+    5:
+      order: 5
+      # [TG, repeatable]
+      1:
+        repeat: true
+        # [K] 18: Provisioning ecosystem services
+        18:
+          maintag: true
+        # [K] 27: Ranking
+        27: null
+      # [TG, repeatable]
+      2:
+        repeat: true
+        # [K] 19: Regulating ecosystem services
+        19:
+          maintag: true
+        # [K] 27: Ranking
+        27: null
+      # [TG, repeatable]
+      3:
+        repeat: true
+        # [K] 20: Cultural ecosystem services
+        20:
+          maintag: true
+        # [K] 27: Ranking
+        27: null
+    # [C-THG] 6: Produce
+    6:
+      order: 6
+      # [TG, repeatable]
+      1:
+        repeat: true
+        # [K] 21: Agricultural product
+        21:
+          maintag: true
+        # [K] 28: Destination
+        28: null
+    # [C-THG] 7: Land rights
+    7:
+      order: 7
+      # [TG]
+      1:
+        # [K] 22: Land owner before
+        22:
+          maintag: true
+      # [TG]
+      2:
+        # [K] 23: Land owner now
+        23:
+          maintag: true
+    # [C-THG] 8: Population
+    8:
+      order: 8
+      # [TG]
+      1:
+        # [K] 24: Number of local population involved
+        24:
+          maintag: true
+      # [TG]
+      2:
+        # [K] 25: Number of permanent employment generated
+        25:
+          maintag: true
+      # [TG]
+      1:
+        # [K] 26: Number of temporary employment generated
+        26:
+          maintag: true
+    # [C-THG] 10: Involvement
+    10:
+      order: 9
+      # [TG]
+      involvement: "secondaryinvestor"
+      
