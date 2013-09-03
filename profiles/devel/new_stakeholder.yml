@@ -11,6 +11,7 @@ fields:
         1:  
           maintag: true
           mandatory: true
+          involvementoverview: true
       # [TG]
       2:
         # [K] 2: Website
@@ -31,6 +32,7 @@ fields:
         # [K] 5: Country of origin
         5:
           maintag: true
+          involvementoverview: true
       # [TG]
       6:
         # [K] 6: Type of organisation

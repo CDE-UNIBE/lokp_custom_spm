@@ -11,7 +11,8 @@
   - SH_Values
   - Profiles (Madagascar)
   - Stakeholder Roles
-  Last update: 2013-09-02 08:46
+
+  Last update: 2013-09-03 08:20
 */
 
 -- CATEGORIES
@@ -41,8 +42,8 @@ INSERT INTO data.a_keys(id, fk_a_key, fk_language, key, type, helptext, descript
   (8, NULL, NULL, 'Commune', 'Checkbox', NULL, NULL, NULL),
   (9, NULL, NULL, 'Fokotany', 'String', NULL, NULL, NULL),
   (10, NULL, NULL, 'Donor', 'String', NULL, NULL, NULL),
-  (11, NULL, NULL, 'Total project budget', 'Number', NULL, NULL, NULL),
-  (12, NULL, NULL, 'Average annual budget', 'Number', NULL, NULL, NULL),
+  (11, NULL, NULL, 'Total project budget', 'Number', NULL, NULL, '[0]'),
+  (12, NULL, NULL, 'Average annual budget', 'Number', NULL, NULL, '[0]'),
   (13, NULL, NULL, 'Goals', 'String', NULL, NULL, NULL),
   (14, NULL, NULL, 'Land use', 'Checkbox', NULL, NULL, NULL),
   (15, NULL, NULL, 'Level of intervention', 'Dropdown', NULL, NULL, NULL),
@@ -54,10 +55,10 @@ INSERT INTO data.a_keys(id, fk_a_key, fk_language, key, type, helptext, descript
   (21, NULL, NULL, 'Agricultural product', 'Dropdown', NULL, NULL, NULL),
   (22, NULL, NULL, 'Land owner before', 'Dropdown', NULL, NULL, NULL),
   (23, NULL, NULL, 'Land owner now', 'Dropdown', NULL, NULL, NULL),
-  (24, NULL, NULL, 'Number of local population involved', 'Integer', NULL, NULL, NULL),
-  (25, NULL, NULL, 'Number of permanent employment generated', 'Integer', NULL, NULL, NULL),
-  (26, NULL, NULL, 'Number of temporary employment generated', 'Integer', NULL, NULL, NULL),
-  (27, NULL, NULL, 'Ranking', 'Integer', NULL, NULL, NULL),
+  (24, NULL, NULL, 'Number of local population involved', 'Integer', NULL, NULL, '[0]'),
+  (25, NULL, NULL, 'Number of permanent employment generated', 'Integer', NULL, NULL, '[0]'),
+  (26, NULL, NULL, 'Number of temporary employment generated', 'Integer', NULL, NULL, '[0]'),
+  (27, NULL, NULL, 'Ranking', 'Integer', NULL, NULL, '[1,5]'),
   (28, NULL, NULL, 'Destination', 'Dropdown', NULL, NULL, NULL),
   (29, 1, 1, 'Name of activity', NULL, NULL, NULL, NULL),
   (30, 2, 1, 'State of advancement', NULL, NULL, NULL, NULL),
