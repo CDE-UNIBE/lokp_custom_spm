@@ -391,12 +391,12 @@ INSERT INTO data.a_values (id, fk_a_value, fk_language, value, fk_a_key, "order"
   (160, NULL, 1, 'Individual non-titled', 84, 4),
   (161, NULL, 1, 'Communal', 84, 5),
   (162, NULL, 1, 'Group', 84, 6),
-  (163, NULL, 1, 'State', 2, 1),
-  (164, NULL, 1, 'Company', 2, 2),
-  (165, NULL, 1, 'Individual titled', 2, 3),
-  (166, NULL, 1, 'Individual non-titled', 2, 4),
-  (167, NULL, 1, 'Communal / Village', 2, 5),
-  (168, NULL, 1, 'Group', 2, 6)
+  (163, NULL, 1, 'State', 85, 1),
+  (164, NULL, 1, 'Company', 85, 2),
+  (165, NULL, 1, 'Individual titled', 85, 3),
+  (166, NULL, 1, 'Individual non-titled', 85, 4),
+  (167, NULL, 1, 'Communal / Village', 85, 5),
+  (168, NULL, 1, 'Group', 85, 6)
 ;
 SELECT setval('data.a_values_id_seq', 168, true);
 
