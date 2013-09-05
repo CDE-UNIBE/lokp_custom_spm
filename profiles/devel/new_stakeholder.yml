@@ -1,9 +1,9 @@
 fields:
-  # [C] 9: Stakeholder Info
-  9:
+  # [C] 1: Stakeholder Info
+  1:
     order: 1
-    # [C-THG] 9: Stakeholder Info
-    9:
+    # [C-THG] 1: Stakeholder Info
+    1:
       order: 1
       # [TG]
       1:
@@ -14,79 +14,179 @@ fields:
           involvementoverview: true
       # [TG]
       2:
-        # [K] 2: Website
+        # [K] 2: Country of origin
         2:
           maintag: true
-      # [TG]
-      3:
-        # [K] 3: Address
-        3:
-          maintag: true
-      # [TG]
-      4:
-        # [K] 4: Phone
-        4:
-          maintag: true
-      # [TG]
-      5:
-        # [K] 5: Country of origin
-        5:
-          maintag: true
+          mandatory: true
           involvementoverview: true
       # [TG]
-      6:
-        # [K] 6: Type of organisation
-        6:
+      3:
+        # [K] 3: Main domain of Natural Resource Management
+        3:
           maintag: true
           mandatory: true
+        # [K] 31: Remarks
+        31: null
+      # [TG]
+      4:
+        # [K] 4: Type of stakeholder
+        4:
+          maintag: true
+          mandatory: true
+        # [K] 31: Remarks
+        31: null
+      # [TG]
+      5:
+        # [K] 5: Website
+        5:
+          maintag: true  
+      # [TG]
+      6:
+        # [K] 6: Address
+        6:
+          maintag: true
       # [TG]
       7:
-        # [K] 7: Year since involvement in Madagascar
+        # [K] 7: Phone
         7:
           maintag: true
       # [TG]
       8:
-        # [K] 8: Number of local staff employed
+        # [K] 8: Start of involvement in Madagascar
         8:
           maintag: true
       # [TG]
       9:
-        # [K] 9: Number of expatriate staff employed
+        # [K] 9: Number of local staff employed
         9:
           maintag: true
       # [TG]
       10:
-        # [K] 10: Approximate annual turnover
+        # [K] 10: Number of expatriate staff employed
         10:
           maintag: true
       # [TG]
       11:
-        # [K] 11: General mission of stakeholder
+        # [K] 11: Approximate annual turnover
         11:
           maintag: true
       # [TG]
       12:
-        # [K] 12: Domain of Natural Resource Management
+        # [K] 12: General mission of stakeholder
         12:
+          maintag: true
+    # [C-THG] 2: External factors influencing stakeholders activities in Madagascar
+    2:
+      order: 2
+      # [TG]
+      1:
+        order: 1
+        # [K] 13: Political issues
+        13:
+          maintag: true
+      # [TG]
+      2:
+        order: 2
+        # [K] 14: Legal issues
+        14:
+          maintag: true
+      # [TG]
+      3:
+        order: 3
+        # [K] 15: Institutional issues
+        15:
+          maintag: true
+      # [TG]
+      4:
+        order: 4
+        # [K] 16: Politics in organisation's home country
+        16:
+          maintag: true
+      # [TG]
+      5:
+        order: 5
+        # [K] 17: Agreements with other organisations
+        17:
+          maintag: true
+      # [TG]
+      6:
+        order: 6
+        # [K] 18: Knowledge produced by research
+        18:
+          maintag: true
+      # [TG]
+      7:
+        order: 7
+        # [K] 19: Donors strategies
+        19:
+          maintag: true
+      # [TG]
+      8:
+        order: 8
+        # [K] 20: Environmental problems
+        20:
+          maintag: true
+      # [TG]
+      9:
+        order: 9
+        # [K] 21: Environmental potentials
+        21:
+          maintag: true
+      # [TG]
+      10:
+        order: 10
+        # [K] 22: Socio-economic problems
+        22:
+          maintag: true
+      # [TG]
+      11:
+        order: 11
+        # [K] 23: Socio-economic potentials
+        23:
+          maintag: true
+      # [TG]
+      12:
+        order: 12
+        # [K] 24: Regional dynamics and factors
+        24:
           maintag: true
       # [TG]
       13:
-        # [K] 13: Sector of Natural Resource Management
-        13:
+        order: 13
+        # [K] 25: International dynamics and factors
+        25:
           maintag: true
-      # [TG, repeatable]
-      14:
-        repeat: true
-        # [K] 14: External factors influencing organisations activities in Madagascar
-        14:
+    # [C-THG] 3: Institutions respected
+    3:
+      order: 3
+      # [TG]
+      1:
+        order: 1
+        # [K] 26: Environmental Impact Assessment
+        26:
           maintag: true
-        # [K] 16: Ranking
-        16: null
-      # [TG, repeatable]
-      15:
-        repeat: true
-        # [K] 15: Institutions respected
-        15:
+      # [TG]
+      2:
+        order: 2
+        # [K] 27: Environmental Policy
+        27:
           maintag: true
-        # [K] 16: Ranking
-        16: null
+      # [TG]
+      3:
+        order: 3
+        # [K] 28: Government Ministries
+        28:
+          maintag: true
+      # [TG]
+      4:
+        order: 4
+        # [K] 29: Decentralized authorities
+        29:
+          maintag: true
+      # [TG]
+      5:
+        order: 5
+        # [K] 30: Madagascar National Parks
+        30:
+          maintag: true
+      

@@ -190,52 +190,19 @@ if 'lmkp.use_piwik_analytics' in request.registry.settings:
                                 </div>
                             </div>-->
 
-                            % if mode == 'demo':
                             <div class="row-fluid">
                                 <div clsas="span10 offset1">
-                                    <p>${_('Welcome to the')} <strong>${_('Demonstration Version')}</strong> ${_('of the')} <a href="http://www.landobservatory.org">${_('Land Observatory')}</a>. ${_('This demo version is for learning and experimentation purposes, so first-time users can get a feel for the Observatory and its functions.')}</p>
+                                    <p>${_('Welcome to the Stakeholder Platform for North-East Madagascar!')}</p>
                                     <div class="start">
                                         <div class="btn-group">
-                                            <a href="/global" class="btn btn-start">${_('Enter')}</a>
-                                            <a href="/global" class="btn btn_favorite_right dropdown-toggle">
+                                            <a href="/madagascar" class="btn btn-start">${_('Enter')}</a>
+                                            <a href="/madagascar" class="btn btn_favorite_right dropdown-toggle">
                                                 <i class="icon-caret-right"></i>
                                             </a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            % else:
-                            <div class="row-fluid action">
-                                <div class="span2 offset1">
-                                    ${_('Select a country')}
-                                </div>
-                                <div class="span3">
-                                    <div class="country-selector">
-                                       <div class="btn-group">
-                                           % if len(profiles) > 0:
-                                           <button class="btn btn-country-selector">${profiles[0][1]}</button>
-                                           <button class="btn btn_favorite_right dropdown-toggle" data-toggle="dropdown">
-                                               <i class="icon-caret-down"></i>
-                                           </button>
-                                           <ul class="dropdown-menu country-selector">
-                                               % for p in profiles:
-                                                <li><a href="/${p[1]}">${p[0]}</a></li>
-                                                % endfor
-                                           </ul>
-                                           % else:
-                                           <button class="btn btn-country-selector">${_('Global')}</button>
-                                           <button class="btn btn_favorite_right dropdown-toggle" data-toggle="dropdown">
-                                               <i class="icon-caret-down"></i>
-                                           </button>
-                                           <ul class="dropdown-menu country-selector">
-                                                <li><a href="/global">${_('Global')}</a></li>
-                                           </ul>
-                                           % endif
-                                       </div>
-                                    </div>
-                                </div>
-                            </div>
-                            % endif
 
                             <div class="row-fluid not-action">
                                 <div class="span offset1">
