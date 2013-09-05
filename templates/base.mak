@@ -7,11 +7,6 @@ selectedlanguage = languages[0]
 for l in languages:
     if locale == l[0]:
         selectedlanguage = l
-profiles = get_profiles()
-selectedprofile = None
-for p in profiles:
-   if profile == p[0]:
-       selectedprofile = p
 mode = None
 if 'lmkp.mode' in request.registry.settings:
     if str(request.registry.settings['lmkp.mode']).lower() == 'demo':
@@ -331,28 +326,6 @@ if 'lmkp.use_piwik_analytics' in request.registry.settings:
                                         </ul>
                                     </div>
                                 </li>
-                                % if len(profiles) >= 1:
-                                   <li>|</li>
-                                   <li>
-                                       <div class="dropdown">
-                                           <a class="dropdown-toggle blacktemp" data-toggle="dropdown" href="#">
-                                               % if selectedprofile is None:
-                                                   ${_('Select Profile')}
-                                               % else:
-                                                   ${selectedprofile[1]}
-                                               % endif
-                                               <b class="caret"></b>
-                                           </a>
-                                           <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
-                                               % for p in profiles:
-                                                   <li class="cursor">
-                                                       <a href="/${p[0]}">${p[1]}</a>
-                                                   </li>
-                                               % endfor
-                                           </ul>
-                                       </div>
-                                   </li>
-                               % endif
                             </ul>
                         </div>
                     </div>
