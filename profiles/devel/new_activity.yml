@@ -19,6 +19,7 @@ fields:
         2:
           maintag: true
           mandatory: true
+          mapsymbol: 1
       # [TG]
       3:
         order: 3
