@@ -25,16 +25,16 @@ fields:
         3:
           maintag: true
           mandatory: true
-        # [K] 31: Remarks
-        31: null
+        # [K] 49: Remark
+        49: null
       # [TG]
       4:
         # [K] 4: Type of stakeholder
         4:
           maintag: true
           mandatory: true
-        # [K] 31: Remarks
-        31: null
+        # [K] 49: Remark
+        49: null
       # [TG]
       5:
         # [K] 5: Website
@@ -57,12 +57,12 @@ fields:
           maintag: true
       # [TG]
       9:
-        # [K] 9: Number of local staff employed
+        # [K] 9: Number of permanent local staff employed
         9:
           maintag: true
       # [TG]
       10:
-        # [K] 10: Number of expatriate staff employed
+        # [K] 10: Number of permanent expatriate staff employed
         10:
           maintag: true
       # [TG]
@@ -72,121 +72,227 @@ fields:
           maintag: true
       # [TG]
       12:
-        # [K] 12: General mission of stakeholder
+        # [K] 12: Approximate annual total global budget
         12:
           maintag: true
-    # [C-THG] 2: External factors influencing stakeholders activities in Madagascar
-    2:
+      # [TG]
+      13:
+        # [K] 13: General mission of stakeholder
+        13:
+          maintag: true
+      # [TG]
+      14:
+        # [K] 45: Embeddedness
+        45:
+          maintag: true
+      # [TG]
+      15:
+        # [K] 46: Remark (Embeddedness)
+        46:
+          maintag: true
+      # [TG]
+      16:
+        # [K] 47: Institutions respected
+        47:
+          maintag: true
+      # [TG]
+      17:
+        # [K] 48: Remark (Institutions respected)
+        48:
+          maintag: true
+    # [C-THG] 21: Reasons for involvement in Madagascar
+    21:
       order: 2
       # [TG]
       1:
         order: 1
-        # [K] 13: Political issues
-        13:
+        # [K] 14: Deforestation
+        14:
           maintag: true
       # [TG]
       2:
         order: 2
-        # [K] 14: Legal issues
-        14:
+        # [K] 15: Threatened biodiversity hotspot
+        15:
           maintag: true
       # [TG]
       3:
         order: 3
-        # [K] 15: Institutional issues
-        15:
+        # [K] 16: Disasters
+        16:
           maintag: true
       # [TG]
       4:
         order: 4
-        # [K] 16: Politics in organisation's home country
-        16:
+        # [K] 17: Malnutrition
+        17:
           maintag: true
       # [TG]
       5:
         order: 5
-        # [K] 17: Agreements with other organisations
-        17:
+        # [K] 18: Poverty
+        18:
           maintag: true
       # [TG]
       6:
         order: 6
-        # [K] 18: Knowledge produced by research
-        18:
+        # [K] 19: Low level of education
+        19:
           maintag: true
       # [TG]
       7:
         order: 7
-        # [K] 19: Donors strategies
-        19:
+        # [K] 20: Other environmental problems
+        20:
           maintag: true
       # [TG]
       8:
         order: 8
-        # [K] 20: Environmental problems
-        20:
+        # [K] 21: Other socio-economic problems
+        21:
           maintag: true
       # [TG]
       9:
         order: 9
-        # [K] 21: Environmental potentials
-        21:
+        # [K] 22: Environmental potential
+        22:
           maintag: true
       # [TG]
       10:
         order: 10
-        # [K] 22: Socio-economic problems
-        22:
+        # [K] 23: Socio-economic potential
+        23:
           maintag: true
       # [TG]
       11:
         order: 11
-        # [K] 23: Socio-economic potentials
-        23:
+        # [K] 24: Favourable land prices
+        24:
           maintag: true
       # [TG]
       12:
         order: 12
-        # [K] 24: Regional dynamics and factors
-        24:
+        # [K] 25: Easily accessible land for crop production
+        25:
           maintag: true
       # [TG]
       13:
         order: 13
-        # [K] 25: International dynamics and factors
-        25:
+        # [K] 26: Favourable production conditions
+        26:
           maintag: true
-    # [C-THG] 3: Institutions respected
-    3:
+      # [TG]
+      14:
+        order: 14
+        # [K] 27: Political instability
+        27:
+          maintag: true
+      # [TG]
+      15:
+        order: 15
+        # [K] 28: Climate change treaties
+        28:
+          maintag: true
+      # [TG]
+      16:
+        order: 16
+        # [K] 29: Your donors strategies
+        29:
+          maintag: true
+      # [TG]
+      17:
+        order: 17
+        # [K] 30: High level of public attention
+        30:
+          maintag: true
+      # [TG]
+      18:
+        order: 18
+        # [K] 31: Personal relations
+        31:
+          maintag: true
+      # [TG]
+      19:
+        order: 19
+        # [K] 32: Francophone country
+        32:
+          maintag: true
+      # [TG]
+      20:
+        order: 20
+        # [K] 33: Established contacts
+        33:
+          maintag: true
+      # [TG]
+      21:
+        order: 21
+        # [K] 34: (Potential) prime tourism destination
+        34:
+          maintag: true
+      # [TG]
+      22:
+        order: 22
+        repeat: true
+        # [K] 35: Other (Reasons for involvement)
+        35:
+          maintag: true
+        # [K] 49: Remark
+        49: null
+    # [C-THG] 2: External factors influencing stakeholders activities in Madagascar
+    2:
       order: 3
       # [TG]
       1:
         order: 1
-        # [K] 26: Environmental Impact Assessment
-        26:
+        # [K] 36: Political issues
+        36:
           maintag: true
       # [TG]
       2:
         order: 2
-        # [K] 27: Environmental Policy
-        27:
+        # [K] 37: Legal issues
+        37:
           maintag: true
       # [TG]
       3:
         order: 3
-        # [K] 28: Government Ministries
-        28:
+        # [K] 38: Institutional issues
+        38:
           maintag: true
       # [TG]
       4:
         order: 4
-        # [K] 29: Decentralized authorities
-        29:
+        # [K] 39: Politics in organisation's home country
+        39:
           maintag: true
       # [TG]
       5:
         order: 5
-        # [K] 30: Madagascar National Parks
-        30:
+        # [K] 40: Agreements with other organisations
+        40:
+          maintag: true
+      # [TG]
+      6:
+        order: 6
+        # [K] 41: Knowledge produced by research
+        41:
+          maintag: true
+      # [TG]
+      7:
+        order: 7
+        # [K] 42: Donors strategies
+        42:
+          maintag: true
+      # [TG]
+      8:
+        order: 8
+        # [K] 43: Regional dynamics and factors
+        43:
+          maintag: true
+      # [TG]
+      9:
+        order: 9
+        # [K] 44: International dynamics and factors
+        44:
           maintag: true
       
