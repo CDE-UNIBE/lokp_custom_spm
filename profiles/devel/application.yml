@@ -11,7 +11,7 @@ application:
     - epsg: 900913
     - format: "image/jpeg"
     - layers: "regions"
-    - transparent: false
+    - transparent: true
     ol_options:
     - visibility: false
     - isBaseLayer: false
@@ -23,7 +23,7 @@ application:
     - epsg: 900913
     - format: "image/jpeg"
     - layers: "Districts"
-    - transparent: false
+    - transparent: true
     ol_options:
     - visibility: false
     - isBaseLayer: false
@@ -35,7 +35,7 @@ application:
     - epsg: 900913
     - format: "image/jpeg"
     - layers: "communes"
-    - transparent: false
+    - transparent: true
     ol_options:
     - visibility: false
     - isBaseLayer: false
@@ -47,7 +47,7 @@ application:
     - epsg: 900913
     - format: "image/jpeg"
     - layers: "Fokontany"
-    - transparent: false
+    - transparent: true
     ol_options:
     - visibility: false
     - isBaseLayer: false
