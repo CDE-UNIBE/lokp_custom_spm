@@ -15,44 +15,51 @@ fields:
       # [TG]
       2:
         order: 2
-        # [K] 2: Focus of activity
-        2:
+        # [K] 83: Main focus of activity
+        83:
           maintag: true
           mandatory: true
           mapsymbol: 1
       # [TG]
       3:
         order: 3
+        # [K] 2: Detailed focus of activity
+        2:
+          maintag: true
+          mandatory: true
+      # [TG]
+      4:
+        order: 4
         # [K] 80: Remark (Focus of activity)
         80:
           maintag: true
       # [TG]
-      4:
-        order: 4
+      5:
+        order: 5
         # [K] 3: State of advancement
         3:
           maintag: true
       # [TG]
-      5:
-        order: 5
+      6:
+        order: 6
         # [K] 4: Start date
         4:
           maintag: true
       # [TG]
-      6:
-        order: 6
+      7:
+        order: 7
         # [K] 5: End date
         5:
           maintag: true
       # [TG]
-      7:
-        order: 7
+      8:
+        order: 8
         # [K] 6: Total project budget
         6:
           maintag: true
       # [TG]
-      8:
-        order: 8
+      9:
+        order: 9
         # [K] 7: Average annual project budget
         7:
           maintag: true
@@ -128,41 +135,50 @@ fields:
         # [K] 17: Goals of activity
         17:
           maintag: true
+    # [C-THG] 22: Land use
+    22:
+      order: 2
       # [TG]
-      2:
-        order: 2
+      1:
+        order: 1
         # [K] 18: Land use
         18:
           maintag: true
       # [TG]
-      3:
-        order: 3
+      2:
+        order: 2
         # [K] 81: Remark (Land use)
         81:
           maintag: true
+    # [C-THG] 23: Level of intervention
+    23:
+      order: 3
       # [TG]
-      4:
-        order: 4
+      1:
+        order: 1
         # [K] 19: Level of intervention
         19:
           maintag: true
         # [K] 15: Remark
         15: null
+    # [C-THG] 24: Type of local stakeholder addressed
+    24:
+      order: 4
       # [TG]
-      5:
-        order: 5
-        # [K] 20: Type of local stakeholder adressed
+      1:
+        order: 1
+        # [K] 20: Type of local stakeholder addressed
         20:
           maintag: true
       # [TG]
-      6:
-        order: 6
-        # [K] 82: Remark (Type of local stakeholder adressed)
+      2:
+        order: 2
+        # [K] 82: Remark (Type of local stakeholder addressed)
         82:
           maintag: true
     # [C-THG] 15: Why this exact location to implement this activity
     15:
-      order: 2
+      order: 5
       # [TG]
       1:
         order: 1
@@ -507,8 +523,8 @@ fields:
         # [K] 73: Other product
         73:
           maintag: true
-        # [K] 72: Destination
-        72: null
+        # [K] 84: Destination
+        84: null
         # [K] 15: Remark
         15: null
     # [C-THG] 17: Land rights
