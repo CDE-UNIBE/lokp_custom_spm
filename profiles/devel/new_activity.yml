@@ -121,7 +121,10 @@ fields:
     14:
       order: 1
       # [TG]
-      involvement: "secondaryinvestor"
+      involvement:
+        name: "involvement"
+        roles: [1,2,3,4,5]
+        repeat: true
   # [C] 7: Focus of activity
   7:
     order: 4

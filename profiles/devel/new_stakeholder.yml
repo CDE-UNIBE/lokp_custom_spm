@@ -313,4 +313,7 @@ fields:
         # [K] 47: International dynamics and factors
         47:
           maintag: true
-      
+      involvement:
+        name: "allinvolvements"
+        roles: [1,2,3,4,5]
+        repeat: true
