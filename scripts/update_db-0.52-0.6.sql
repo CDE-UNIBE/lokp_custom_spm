@@ -75,3 +75,10 @@ UPDATE data.a_values SET "order" = 22 WHERE id = 18;
 
 -- Update sequence
 SELECT setval('data.a_values_id_seq', 189, true);
+
+-- Add new Categories
+INSERT INTO data.categories(id, name, type, fk_language, description, fk_category) VALUES
+  (25, 'Why Madagascar?', 'stakeholders', 1, NULL, NULL),
+  (26, 'External factors', 'stakeholders', 1, NULL, NULL)
+;
+SELECT setval('data.categories_id_seq', 26, true);

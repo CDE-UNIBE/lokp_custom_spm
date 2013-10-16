@@ -39,9 +39,11 @@ INSERT INTO data.categories(id, name, type, fk_language, description, fk_categor
   (21, 'Reasons for involvement in Madagascar', 'stakeholders', 1, NULL, NULL),
   (22, 'Land use', 'activities', 1, NULL, NULL),
   (23, 'Level of intervention', 'activities', 1, NULL, NULL),
-  (24, 'Type of local stakeholder addressed', 'activities', 1, NULL, NULL)
+  (24, 'Type of local stakeholder addressed', 'activities', 1, NULL, NULL),
+  (25, 'Why Madagascar?', 'stakeholders', 1, NULL, NULL),
+  (26, 'External factors', 'stakeholders', 1, NULL, NULL)
 ;
-SELECT setval('data.categories_id_seq', 24, true);
+SELECT setval('data.categories_id_seq', 26, true);
 
 -- A_KEYS
 INSERT INTO data.a_keys(id, fk_a_key, fk_language, key, type, helptext, description, validator) VALUES
