@@ -12,6 +12,7 @@ fields:
           maintag: true
           mandatory: true
           involvementoverview: 1
+          gridcolumn: 1
       # [TG]
       2:
         # [K] 2: Country of origin
@@ -19,12 +20,14 @@ fields:
           maintag: true
           mandatory: true
           involvementoverview: 2
+          gridcolumn: 2
       # [TG]
       3:
         # [K] 3: Main domain of Natural Resource Management
         3:
           maintag: true
           mandatory: true
+          gridcolumn: 3
         # [K] 52: Remark
         52: null
       # [TG]

@@ -13,6 +13,7 @@ fields:
           maintag: true
           mandatory: true
           involvementoverview: 1
+          gridcolumn: 1
       # [TG]
       2:
         order: 2
@@ -22,6 +23,7 @@ fields:
           mandatory: true
           mapsymbol: 1
           involvementoverview: 2
+          gridcolumn: 2
       # [TG]
       3:
         order: 3
