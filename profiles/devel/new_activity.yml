@@ -71,7 +71,9 @@ fields:
     13:
       order: 2
       # [TG]
-      map: "map"
+      map:
+        name: 'map'
+        mode: 'multipoints'
       # [TG]
       1:
         order: 1
