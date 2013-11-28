@@ -136,6 +136,9 @@ if 'lmkp.use_piwik_analytics' in request.registry.settings:
             div.grid-area div.row-fluid div.span5 h5 {
                 font-weight: normal !important;
             }
+            div.grid-area div.row-fluid div.span5 h5.moderate-metadata {
+                font-weight: bold !important;
+            }
             div.grid-area div.row-fluid:first-child div.span5 h5 {
                 font-weight: bold !important;
             }
@@ -194,7 +197,13 @@ if 'lmkp.use_piwik_analytics' in request.registry.settings:
                 color: black;
                 text-decoration: underline;
             }
-
+            ul.bullets {
+                list-style-type: disc;
+                margin: 0 25px 15px;
+            }
+            ul.bullets li {
+                margin: 5px 0;
+            }
         </style>
 
         ## Include the head tags of the child template if available.
@@ -338,19 +347,6 @@ if 'lmkp.use_piwik_analytics' in request.registry.settings:
                 </div>
 
                 ## End of Header
-
-                ## Show session messages if available
-                % if request.session.peek_flash():
-                <div class="row-fluid">
-                    <div class="alert alert-block" style="margin-bottom:0;">
-                        % for message in request.session.pop_flash():
-                            <p>
-                                <% context.write(message) %>
-                            </p>
-                        % endfor
-                    </div>
-                </div>
-                % endif
 
                 ## Content
 
