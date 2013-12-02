@@ -127,7 +127,7 @@ hr.lightgray {
 }
 
 .green {
-	color: #bf9030;
+	color: #A3A708;
 }
 
 .white {
@@ -290,7 +290,7 @@ hr.lightgray {
 .top-menu > li > a:hover {
     background-color: white;
     box-shadow: none;
-    color: #bf9030;
+    color: #a3a708;
 }
 
 .navbar .nav {
@@ -316,8 +316,8 @@ hr.lightgray {
 
 .top-menu li.active {
 	padding-bottom: 9px;
-	border-bottom: 4px solid #bf9030;
-	color: #bf9030;
+	border-bottom: 4px solid #a3a708;
+	color: #a3a708;
 }
 
 .user {
@@ -525,15 +525,15 @@ span.arrow {
 
 .btn_favorite_right {
 	background-image: none;
-	background-color: #bf9030;
-	border: 1px solid #bf9030;
+	background-color: #A3A708;
+	border: 1px solid #A3A708;
 }
 
 .btn_favorite_right:hover,
 .btn_favorite_right:active,
 .btn_favorite_right:focus {
 	background-image: none;
-	background-color: #bf9030;
+	background-color: #A3A708;
 	box-shadow: none;
 }
 
@@ -585,9 +585,9 @@ span.arrow {
 .nav-tabs > .active > a:hover,
 .nav-tabs > .active > a:focus {
 	border: none;
-    background-color: #bf9030;
+    background-color: #a3a708;
     color: white;
-    border-bottom: 2px solid #bf9030;
+    border-bottom: 2px solid #a3a708;
     height: 20px;
 }
 
@@ -643,7 +643,7 @@ table.table-self {
 .table-self tbody tr:hover > td,
  .table-self tbody tr:hover > th,
  .active-row  {
-    background-color: #f4d494;
+    background-color: #dbdb9b;
     cursor: pointer;
 }
 
@@ -694,7 +694,7 @@ table.table-self {
 }
 
 .deal-editor-menu-bar ul li {
-	background-color: #bf9030;
+	background-color: #A3A708;
 	margin-bottom: 5px;
 	padding: 2px 8px 2px 8px;
 	border-radius: 4px;
@@ -720,7 +720,7 @@ table.table-self {
 }
 
 .active-wrapper {
-	background: url("../img/arrow-left-brown.png") no-repeat left center;
+	background: url("../img/arrow-left-green.png") no-repeat left center;
 	text-align: right;
 	margin-left: -8px;
 	background-size: 12px 12px;
@@ -736,7 +736,7 @@ table.table-self {
 }
 
 .show-investors-wrapper {
-	background: url("../img/arrow-left-brown.png") no-repeat left center;
+	background: url("../img/arrow-left-green.png") no-repeat left center;
 	width: 150px;
 	float: right;
 	margin: 0 auto;
@@ -745,7 +745,7 @@ table.table-self {
 
 .show-investors {
 	float: right;
-	background-color: #bf9030;
+	background-color: #A3A708;
 	color: white;
 	width: 120px;
 	height: 30px;
@@ -786,7 +786,6 @@ textarea {
 
 input[type="text"].input-style {
 	height: 16px;
-	max-width: 55px;
 	margin-right: 10px;
 	float: left;
 }
@@ -992,7 +991,7 @@ p.deal-detail {
 
 .basic-data {
 	top: 109px;
-	background-color: #bf9030;
+	background-color: #A3A708;
 	border-bottom-right-radius: 4px;
 	border-bottom-left-radius: 4px;
 	padding: 20px 15px 20px 15px;
@@ -1095,7 +1094,7 @@ p.deal-detail {
 }
 
 .dropdown-menu>li>a:hover {
-	background: #bf9030;
+	background: #A3A708;
 	border-top: 1px solid gray;
 	border-bottom: 1px solid gray;
 	padding: 2px 2px 2px 20px;
@@ -1239,7 +1238,7 @@ p.deal-detail {
 	border-color: gray;
 }
 .carousel-indicators .active {
-	background: #bf9030;
+	background: #a3a708;
 }
 
 .carousel-caption {
@@ -1868,12 +1867,94 @@ background-color: #CB820E;
 
 }
 
+/* CUSTOM FIXES */
+
 .disableClick {
     pointer-events: none;
 }
-
 .helpTooltip {
     cursor: pointer;
+}
+.blacklink,
+.blacklink:hover {
+    color: black;
+    text-decoration: underline;
+}
+ul.bullets {
+    list-style-type: disc;
+    margin: 0 25px 15px;
+}
+ul.bullets li {
+    margin: 5px 0;
+}
+
+/* Form */
+.desired-form-field:after {
+    content: '*';
+    font-weight: bold;
+    color: #3a87ad;
+}
+.required-form-field:after {
+    content: '*';
+    font-weight: bold;
+    color: #b94a48;
+}
+.sequencestyle, #coordinates-div {
+    background-color: #F7F7F7;
+    border: 1px solid silver;
+    color: #333333;
+}
+.sequence-close {
+    color: #8B1A1A;
+    opacity: 0.5;
+}
+div.grid-area div.row-fluid div.span5 h5 {
+    font-weight: normal !important;
+}
+div.grid-area div.row-fluid div.span5 h5.moderate-metadata {
+    font-weight: bold !important;
+}
+div.grid-area div.row-fluid:first-child div.span5 h5 {
+    font-weight: bold !important;
+}
+.form-button-visited {
+    float: right;
+    margin-left: 5px;
+}
+.confirmButtons {
+    margin-right: 5px;
+}
+.file-upload-button {
+    position: relative;
+    right: 0;
+    top: 0;
+}
+.fileDisplay {
+    margin-bottom: 5px;
+}
+.fileNameField input {
+    border: 1px solid #A4A4A4;
+    box-shadow: 0 0 3px #D8D8D8 inset;
+    color: #585858 !important;
+    outline: medium none;
+    height: 16px;
+    margin-right: 10px;
+}
+.fileNameField input:focus {
+    border: 1px solid #A4A4A4;
+    box-shadow: 0 0 3px #D8D8D8 inset;
+}
+.fileNameField a, .fileNameField button {
+    margin: 0 4px 8px 0;
+}
+.uploadButton {
+    margin-bottom: 15px;
+}
+.fileUploadTitle {
+    padding-top: 0;
+}
+.fileInput {
+    width: 300px !important;
 }
 
 /* Map / Map Form */
@@ -2009,6 +2090,9 @@ background-color: #CB820E;
     padding-top: 0;
     font-size: 1em;
 }
+#coordinates-div {
+    padding: 10px;
+}
 
 h3.form-below-toolbar {
     padding-top: 10px;
@@ -2050,7 +2134,125 @@ h3.form-below-toolbar {
     padding-top: 0;
 }
 
+/* Filter */
+.filter_area_openclose {
+    cursor: pointer;
+}
+#new-filter-value-internal {
+    width: 178px;
+}
+.input-append #new-filter-value {
+    width: 147px;
+}
+.new-filter .dropdown-menu {
+    max-height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+#new-filter-value-box button {
+    margin-right: 0;
+}
+.select_btn_operator_right {
+    margin-right: 3px;
+}
+.filterCategory {
+    font-weight: bold;
+    padding: 5px 0 5px 10px;
+}
+#new-filter-key {
+    overflow: hidden;
+    width: 108px;
+}
+#new-filter-operator-display {
+    width: 40px;
+    overflow: hidden;
+}
+.filter_area input:focus {
+    border: medium none;
+    box-shadow: none;
+}
+[class*="filter-variable"] {
+    width: 425px;
+}
+
 /* Grid */
 tr.pending {
     background-color: #fcf8e3;
+}
+.show-investors {
+    height: auto;
+}
+.desc.active {
+    background: url("/custom/img/to-top-black.png") no-repeat scroll right top transparent;
+}
+.show-investors a {
+    text-decoration: none;
+    color: white;
+}
+
+/* About */
+ul.about {
+    list-style-type: disc;
+    margin: 0 25px 15px;
+}
+ul.about li {
+    margin: 5px 0;
+}
+.introvideo {
+    margin-top: 40px;
+}
+
+/* Charts */
+.chartGalleryDescription {
+    margin-top: 1em;
+}
+
+/* FAQ */
+ul.links {
+    margin: 20px 0;
+}
+ul.links li {
+    line-height: 1.8em;
+}
+
+/* Compare */
+.change .icon-exclamation-sign {
+    margin-top: 0.3em;
+}
+.change .accordion-toggle h5 {
+    color: #CB820E;
+}
+.taggroup-content {
+    padding-left: 20px;
+    padding-top: 10px;
+}
+.deal-moderate-content .accordion-group {
+    margin-bottom: 0;
+}
+/* http://stackoverflow.com/a/14004830/841644 */
+.deal-moderate-col {
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+}
+.deal-moderate-col-wrap {  
+    overflow: hidden;   
+}
+.deal-moderate-button {
+    cursor: pointer !important;
+}
+.alert-missing-mandatory-keys,
+.alert-recalculated-version {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.moderate-form {
+    margin-top: 20px;
+}
+
+/* History */
+.deal-history-links {
+    text-align: right !important;
+}
+tr.deal-history-active {
+    font-weight: bold;
 }

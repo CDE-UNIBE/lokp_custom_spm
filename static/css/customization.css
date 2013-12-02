@@ -1,0 +1,67 @@
+.green {
+    color: #bf9030;
+}
+
+.top-menu > .active > a,
+.top-menu > .active > a:hover,
+.top-menu > .active > a:focus,
+.top-menu > li > a:hover {
+    color: #bf9030;
+}
+
+.top-menu li.active {
+    border-bottom: 4px solid #bf9030;
+    color: #bf9030;
+}
+
+.btn_favorite_right {
+    background-color: #bf9030;
+    border: 1px solid #bf9030;
+}
+
+.btn_favorite_right:hover,
+.btn_favorite_right:active,
+.btn_favorite_right:focus {
+	background-color: #bf9030;
+}
+
+.nav-tabs > .active > a,
+.nav-tabs > .active > a:hover,
+.nav-tabs > .active > a:focus {
+    background-color: #bf9030;
+    border-bottom: 2px solid #bf9030;
+}
+
+.table-self tbody tr:hover > td,
+.table-self tbody tr:hover > th,
+.active-row  {
+    background-color: #f4d494;;
+}
+
+.deal-editor-menu-bar ul li {
+    background-color: #bf9030;
+}
+
+.active-wrapper {
+    background: url("../img/arrow-left-brown.png") no-repeat left center;
+}
+
+.show-investors-wrapper {
+    background: url("../img/arrow-left-brown.png") no-repeat left center;
+}
+
+.show-investors {
+    background-color: #bf9030;
+}
+
+.basic-data {
+    background-color: #bf9030;
+}
+
+.dropdown-menu>li>a:hover {
+    background: #bf9030;
+}
+
+.carousel-indicators .active {
+    background: #bf9030;
+}
