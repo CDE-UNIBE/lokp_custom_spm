@@ -46,11 +46,11 @@
                         <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu pull-right" role="menu">
-                        <li class="disabled filterCategory">${_('Deals')}</li>
+                        <li class="disabled filterCategory">${_('Activities')}</li>
                         % for k in aFilterKeys:
                             <li><a href="#" onClick="javascript:selectKey('${k[0]}', '${k[1]}', '${k[2]}', 'a')">${k[0]}</a></li>
                         % endfor
-                        <li class="disabled filterCategory">${_('Investors')}</li>
+                        <li class="disabled filterCategory">${_('Stakeholders')}</li>
                         % for k in shFilterKeys:
                             <li><a href="#" onClick="javascript:selectKey('${k[0]}', '${k[1]}', '${k[2]}', 'sh')">${k[0]}</a></li>
                         % endfor

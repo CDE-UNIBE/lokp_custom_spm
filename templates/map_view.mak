@@ -27,17 +27,17 @@ mapSymbolValues = [v[0] for v in sorted(getFilterValuesForKey(request,
     var mapCriteria = ${json.dumps(mapCriteria) | n};
 
     ## JS Translation
-    var tForDeals = '${_("Deal")}';
-    var tForInvestor = '${_("Investor")}';
-    var tForInvestors = '${_("Investors")}';
+    var tForDeals = '${_("Activity")}';
+    var tForInvestor = '${_("Stakeholder")}';
+    var tForInvestors = '${_("Stakeholders")}';
     var tForLegend = '${_("Legend")}';
     var tForLegendforcontextlayer = '${_("Legend for context layer")}';
     var tForLoading = '${_("Loading ...")}';
     var tForLoadingdetails = '${_("Loading the details ...")}';
-    var tForMoredeals = '${_(" more deals ...")}';
-    var tForNodealselected = '${_("No deal selected.")}';
-    var tForSelecteddeals = '${_("Selected Deals")}';
-    var tForDealsGroupedBy = '${_("The deals are grouped by")}';
+    var tForMoredeals = '${_(" more activities ...")}';
+    var tForNodealselected = '${_("No activity selected.")}';
+    var tForSelecteddeals = '${_("Selected Activities")}';
+    var tForDealsGroupedBy = '${_("The activities are grouped by")}';
 
 </script>
 </%def>
@@ -53,12 +53,12 @@ mapSymbolValues = [v[0] for v in sorted(getFilterValuesForKey(request,
 </div>
 
 <div class="basic-data">
-    <h6 class="deal-headline">${_('Deal')}
+    <h6 class="deal-headline">${_('Activity')}
         <span id="deal-shortid-span" class="underline">#</span>
     </h6>
     <ul id="taggroups-ul">
         <li>
-            <p>${_('No deal selected.')}</p>
+            <p>${_('No activity selected.')}</p>
         </li>
     </ul>
 </div>

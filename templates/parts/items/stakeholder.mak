@@ -1,1 +1,1 @@
-${_('Investor')}
+${_('Stakeholder')}
