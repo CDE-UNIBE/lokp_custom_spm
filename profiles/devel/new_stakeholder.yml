@@ -11,20 +11,23 @@ fields:
         1:  
           maintag: true
           mandatory: true
-          involvementoverview: true
+          involvementoverview: 1
+          gridcolumn: 1
       # [TG]
       2:
         # [K] 2: Country of origin
         2:
           maintag: true
           mandatory: true
-          involvementoverview: true
+          involvementoverview: 2
+          gridcolumn: 2
       # [TG]
       3:
         # [K] 3: Main domain of Natural Resource Management
         3:
           maintag: true
           mandatory: true
+          gridcolumn: 3
         # [K] 52: Remark
         52: null
       # [TG]
@@ -100,6 +103,9 @@ fields:
         # [K] 51: Remark (Institutions respected)
         51:
           maintag: true
+  # [C] 25: Why Madagascar?
+  25:
+    order: 2
     # [C-THG] 21: Reasons for involvement in Madagascar
     21:
       order: 2
@@ -256,6 +262,9 @@ fields:
           maintag: true
         # [K] 52: Remark
         52: null
+  # [C] 26: External factors
+  26:
+    order: 3
     # [C-THG] 2: External factors influencing stakeholders activities in Madagascar
     2:
       order: 3
@@ -313,4 +322,7 @@ fields:
         # [K] 47: International dynamics and factors
         47:
           maintag: true
-      
+      involvement:
+        name: "allinvolvements"
+        roles: [1,2,3,4,5]
+        repeat: true
