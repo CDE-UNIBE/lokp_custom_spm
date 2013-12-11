@@ -148,7 +148,7 @@ if 'lmkp.use_piwik_analytics' in request.registry.settings:
                                         >
                                         <a href="${request.route_url('activities_read_many', output='form')}" >
                                             <i class="icon-pencil"></i>
-                                            ${_('New Deal')}
+                                            ${_('New Activity')}
                                         </a>
                                     </li>
                                 % endif
