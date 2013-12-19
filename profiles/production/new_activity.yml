@@ -1,0 +1,587 @@
+fields:
+  # [C] 4: General Information
+  4:
+    order: 1
+    # [C-THG] 12: Activity Info
+    12:
+      order: 1
+      # [TG]
+      1:
+        order: 1
+        # [K] 1: Name of activity
+        1:
+          maintag: true
+          mandatory: true
+          involvementoverview: 1
+          gridcolumn: 1
+      # [TG]
+      2:
+        order: 2
+        # [K] 83: Main focus of activity
+        83:
+          maintag: true
+          mandatory: true
+          mapsymbol: 1
+          involvementoverview: 2
+          gridcolumn: 2
+      # [TG]
+      3:
+        order: 3
+        # [K] 2: Detailed focus of activity
+        2:
+          maintag: true
+          mandatory: true
+      # [TG]
+      4:
+        order: 4
+        # [K] 80: Remark (Focus of activity)
+        80:
+          maintag: true
+      # [TG]
+      5:
+        order: 5
+        # [K] 3: State of advancement
+        3:
+          maintag: true
+      # [TG]
+      6:
+        order: 6
+        # [K] 4: Start date
+        4:
+          maintag: true
+      # [TG]
+      7:
+        order: 7
+        # [K] 5: End date
+        5:
+          maintag: true
+      # [TG]
+      8:
+        order: 8
+        # [K] 6: Total project budget
+        6:
+          maintag: true
+      # [TG]
+      9:
+        order: 9
+        # [K] 7: Average annual project budget
+        7:
+          maintag: true
+    # [C-THG] 13: Spatial Data
+    13:
+      order: 2
+      # [TG]
+      map:
+        name: 'map'
+        mode: 'multipoints'
+      # [TG]
+      1:
+        order: 1
+        # [K] 8: Spatial Accuracy
+        8:
+          maintag: true
+      # [TG]
+      2:
+        order: 2
+        # [K] 9: District
+        9:
+          maintag: true
+      # [TG]
+      3:
+        order: 3
+        # [K] 10: Commune
+        10:
+          maintag: true
+      # [TG, repeatable]
+      4:
+        order: 4
+        repeat: true
+        # [K] 11: Fokotany
+        11:
+          maintag: true
+  # [C] 5: Data source
+  5:
+    order: 2
+    # [C-THG] 5: Data source
+    5:
+      order: 1
+      # [TG, repeatable]
+      1:
+        order: 1
+        repeat: true
+        # [K] 12: Data source
+        12:
+          maintag: true
+        # [K] 13: File
+        13: null
+        # [K] 14: Date
+        14: null
+        # [K] 15: Remark
+        15: null
+        # [K] 16: URL / Web
+        16: null
+  # [C] 6: Stakeholder info
+  6:
+    order: 3
+    # [C-THG] 14: Involvement
+    14:
+      order: 1
+      # [TG]
+      involvement:
+        name: "involvement"
+        roles: [1,2,3,4,5]
+        repeat: true
+  # [C] 7: Focus of activity
+  7:
+    order: 4
+    # [C-THG] 7: Focus of activity
+    7:
+      order: 1
+      # [TG]
+      1:
+        order: 1
+        repeat: true
+        # [K] 17: Goals of activity
+        17:
+          maintag: true
+    # [C-THG] 22: Land use
+    22:
+      order: 2
+      # [TG]
+      1:
+        order: 1
+        # [K] 18: Land use
+        18:
+          maintag: true
+      # [TG]
+      2:
+        order: 2
+        # [K] 81: Remark (Land use)
+        81:
+          maintag: true
+    # [C-THG] 23: Level of intervention
+    23:
+      order: 3
+      # [TG]
+      1:
+        order: 1
+        # [K] 19: Level of intervention
+        19:
+          maintag: true
+        # [K] 15: Remark
+        15: null
+    # [C-THG] 24: Type of local stakeholder addressed
+    24:
+      order: 4
+      # [TG]
+      1:
+        order: 1
+        # [K] 20: Type of local stakeholder addressed
+        20:
+          maintag: true
+      # [TG]
+      2:
+        order: 2
+        # [K] 82: Remark (Type of local stakeholder addressed)
+        82:
+          maintag: true
+    # [C-THG] 15: Why this exact location to implement this activity
+    15:
+      order: 5
+      # [TG]
+      1:
+        order: 1
+        # [K] 21: Nobody else was working in this area in our field of interest
+        21:
+          maintag: true
+      # [TG]
+      2:
+        order: 2
+        # [K] 22: The location is easily accessible
+        22:
+          maintag: true
+      # [TG]
+      3:
+        order: 3
+        # [K] 23: The need for this activity is bigger than elsewhere in the country
+        23:
+          maintag: true
+      # [TG]
+      4:
+        order: 4
+        # [K] 24: There was a local demand for our activity
+        24:
+          maintag: true
+      # [TG]
+      5:
+        order: 5
+        # [K] 25: There was a national demand for our activity
+        25:
+          maintag: true
+      # [TG]
+      6:
+        order: 6
+        # [K] 26: Somebody in the organization had personal ties to this location
+        26:
+          maintag: true
+      # [TG]
+      7:
+        order: 7
+        # [K] 27: Other (Why this exact location)
+        27:
+          maintag: true
+        # [K] 15: Remark
+        15: null
+  # [C] 8: Provisioning ecosystem services
+  8:
+    order: 5
+    # [C-THG] 8: Provisioning ecosystem services
+    8:
+      order: 1
+      # [TG]
+      1:
+        order: 1
+        # [K] 28: Cultivated crops
+        28:
+          maintag: true
+      # [TG]
+      2:
+        order: 2
+        # [K] 29: Reared animals and their outputs
+        29:
+          maintag: true
+      # [TG]
+      3:
+        order: 3
+        # [K] 30: Wild plants and their outputs
+        30:
+          maintag: true
+      # [TG]
+      4:
+        order: 4
+        # [K] 31: Wild animals and their outputs
+        31:
+          maintag: true
+      # [TG]
+      5:
+        order: 5
+        # [K] 32: Plants from in-situ aquaculture
+        32:
+          maintag: true
+      # [TG]
+      6:
+        order: 6
+        # [K] 33: Animals from in-situ aquaculture
+        33:
+          maintag: true
+      # [TG]
+      7:
+        order: 7
+        # [K] 34: Surface water for drinking
+        34:
+          maintag: true
+      # [TG]
+      8:
+        order: 8
+        # [K] 35: Ground water for drinking
+        35:
+          maintag: true
+      # [TG]
+      9:
+        order: 9
+        # [K] 36: Fibres and other materials from plants, or animals for direct use or processing
+        36:
+          maintag: true
+      # [TG]
+      10:
+        order: 10
+        # [K] 37: Materials from plants, algae and animals for agricultural use
+        37:
+          maintag: true
+      # [TG]
+      11:
+        order: 11
+        # [K] 38: Genetic materials from all biota
+        38:
+          maintag: true
+      # [TG]
+      12:
+        order: 12
+        # [K] 39: Surface water for non-drinking purposes
+        39:
+          maintag: true
+      # [TG]
+      13:
+        order: 13
+        # [K] 40: Ground water for non-drinking purposes
+        40:
+          maintag: true
+      # [TG]
+      14:
+        order: 14
+        # [K] 41: Plant-based resources
+        41:
+          maintag: true
+      # [TG]
+      15:
+        order: 15
+        # [K] 42: Animal-based resources
+        42:
+          maintag: true
+  # [C] 9: Regulating ecosystem services
+  9:
+    order: 6
+    # [C-THG] 9: Regulating ecosystem services
+    9:
+      order: 1
+      # [TG]
+      1:
+        order: 1
+        # [K] 43: Bio-remediation by plants and animals
+        43:
+          maintag: true
+      # [TG]
+      2:
+        order: 2
+        # [K] 44: Filtration/sequestration/storage/accumulation
+        44:
+          maintag: true
+      # [TG]
+      3:
+        order: 3
+        # [K] 45: Filtration/sequestration/storage/accumulation by ecosystems
+        45:
+          maintag: true
+      # [TG]
+      4:
+        order: 4
+        # [K] 46: Mass stabilisation and control of erosion rates
+        46:
+          maintag: true
+      # [TG]
+      5:
+        order: 5
+        # [K] 47: Buffering and attenuation of mass flows
+        47:
+          maintag: true
+      # [TG]
+      6:
+        order: 6
+        # [K] 48: Hydrological cycle and water flow maintenance
+        48:
+          maintag: true
+      # [TG]
+      7:
+        order: 7
+        # [K] 49: Flood protection
+        49:
+          maintag: true
+      # [TG]
+      8:
+        order: 8
+        # [K] 50: Storm protection
+        50:
+          maintag: true
+      # [TG]
+      9:
+        order: 9
+        # [K] 51: Pollination and seed dispersal
+        51:
+          maintag: true
+      # [TG]
+      10:
+        order: 10
+        # [K] 52: Maintaining nursery populations and habitats
+        52:
+          maintag: true
+      # [TG]
+      11:
+        order: 11
+        # [K] 53: Pest control
+        53:
+          maintag: true
+      # [TG]
+      12:
+        order: 12
+        # [K] 54: Disease control
+        54:
+          maintag: true
+      # [TG]
+      13:
+        order: 13
+        # [K] 55: Weathering processes
+        55:
+          maintag: true
+      # [TG]
+      14:
+        order: 14
+        # [K] 56: Decomposition and fixing processes
+        56:
+          maintag: true
+      # [TG]
+      15:
+        order: 15
+        # [K] 57: Chemical condition of freshwaters
+        57:
+          maintag: true
+      # [TG]
+      16:
+        order: 16
+        # [K] 58: Chemical condition of salt waters
+        58:
+          maintag: true
+      # [TG]
+      17:
+        order: 17
+        # [K] 59: Global climate regulation by reduction of greenhouse gas concentrations
+        59:
+          maintag: true
+      # [TG]
+      18:
+        order: 18
+        # [K] 60: Micro and regional climate regulation
+        60:
+          maintag: true
+  # [C] 10: Cultural ecosystem services
+  10:
+    order: 7
+    # [C-THG] 10: Cultural ecosystem services
+    10:
+      order: 1
+      # [TG]
+      1:
+        order: 1
+        # [K] 61: Touristic activities
+        61:
+          maintag: true
+      # [TG]
+      2:
+        order: 2
+        # [K] 62: Scientific
+        62:
+          maintag: true
+      # [TG]
+      3:
+        order: 3
+        # [K] 63: Educational
+        63:
+          maintag: true
+      # [TG]
+      4:
+        order: 4
+        # [K] 64: Heritage, cultural
+        64:
+          maintag: true
+      # [TG]
+      5:
+        order: 5
+        # [K] 65: Entertainment
+        65:
+          maintag: true
+      # [TG]
+      6:
+        order: 6
+        # [K] 66: Aesthetic
+        66:
+          maintag: true
+      # [TG]
+      7:
+        order: 7
+        # [K] 67: Symbolic
+        67:
+          maintag: true
+      # [TG]
+      8:
+        order: 8
+        # [K] 68: Sacred and/or religious
+        68:
+          maintag: true
+      # [TG]
+      9:
+        order: 9
+        # [K] 69: Existence
+        69:
+          maintag: true
+      # [TG]
+      10:
+        order: 10
+        # [K] 70: Bequest value for future generations
+        70:
+          maintag: true
+  # [C] 11: Other information
+  11:
+    order: 8
+    # [C-THG] 16: Produce
+    16:
+      order: 1
+      # [TG, repeatable]
+      1:
+        order: 1
+        repeat: true
+        # [K] 71: Agricultural product
+        71:
+          maintag: true
+        # [K] 72: Destination
+        72: null
+        # [K] 15: Remark
+        15: null
+      # [TG, repeatable]
+      2:
+        order: 2
+        repeat: true
+        # [K] 73: Other product
+        73:
+          maintag: true
+        # [K] 84: Destination
+        84: null
+        # [K] 15: Remark
+        15: null
+    # [C-THG] 17: Land rights
+    17:
+      order: 1
+      # [TG]
+      1:
+        order: 1
+        # [K] 74: Land owner before
+        74:
+          maintag: true
+      # [TG]
+      2:
+        order: 2
+        # [K] 75: Land owner now
+        75:
+          maintag: true
+    # [C-THG] 18: Population involved
+    18:
+      order: 2
+      # [TG]
+      1:
+        order: 1
+        # [K] 76: Number of local population involved
+        76:
+          maintag: true
+    # [C-THG] 19: Employment
+    19:
+      order: 3
+      # [TG]
+      1:
+        order: 1
+        # [K] 77: Number of permanent employment generated
+        77:
+          maintag: true
+      # [TG]
+      2:
+        order: 2
+        # [K] 78: Number of temporary employment generated
+        78:
+          maintag: true
+    # [C-THG] 20: Main sonstraints
+    20:
+      order: 4
+      # [TG]
+      1:
+        order: 1
+        repeat: true
+        # [K] 79: Main constraints
+        79:
+          maintag: true
