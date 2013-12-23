@@ -238,3 +238,11 @@ UPDATE data.sh_values SET "order" = 25 WHERE id = 267;
 
 
 SELECT setval('data.sh_values_id_seq', 314, true);
+
+/*
+  LANGUAGES
+*/
+INSERT INTO data.languages(id, english_name, local_name, locale) VALUES
+    (2, 'French', 'Français', 'fr')
+;
+SELECT setval('data.languages_id_seq', 2, true);
