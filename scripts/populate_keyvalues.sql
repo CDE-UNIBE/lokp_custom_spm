@@ -869,3 +869,8 @@ INSERT INTO data.stakeholder_roles(id, name, description) VALUES
 ;
 SELECT setval('data.stakeholder_roles_id_seq', 5, true);
 
+-- LANGUAGES
+INSERT INTO data.languages(id, english_name, local_name, locale) VALUES
+    (2, 'French', 'Français', 'fr')
+;
+SELECT setval('data.languages_id_seq', 2, true);

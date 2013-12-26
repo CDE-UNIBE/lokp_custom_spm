@@ -28,7 +28,7 @@ if 'lmkp.use_piwik_analytics' in request.registry.settings:
         <meta charset="utf-8">
         <meta name="content-language" content="${selectedlanguage[0]}" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>${_('Land Observatory')}</title>
+        <title>${_('ESAPP Stakeholder Platform North-East Madagascar')}</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 
@@ -119,9 +119,7 @@ if 'lmkp.use_piwik_analytics' in request.registry.settings:
                                 </div>
 
                                 <div class="span6 landing-introduction">
-                                    <p>
-                                        <strong>${_('The Land Observatory')} </strong>${_('is a pilot project by some partners of the')} <a href="http://www.landmatrix.org">${_('Land Matrix')}</a>, ${_('designed to provide greater context and deeper insight on land deals, from a more local perspective.')}
-                                    </p>
+                                    
                                 </div>
                                 <div class="user">
                                     <ul class="nav nav-pills">
@@ -150,9 +148,7 @@ if 'lmkp.use_piwik_analytics' in request.registry.settings:
                                     </a>
                                 </div>
                                 <div class="span6 landing-introduction">
-                                    <p>
-                                        <strong>${_('The Land Observatory')} </strong>${_('is a pilot project by some partners of the')} <a href="http://www.landmatrix.org">${_('Land Matrix')}</a>, ${_('designed to provide greater context and deeper insight on land deals, from a more local perspective.')}
-                                    </p>
+                                    
                                 </div>
                                 <div class="span3">
                                     <div class="user">
@@ -193,6 +189,9 @@ if 'lmkp.use_piwik_analytics' in request.registry.settings:
                             <div class="row-fluid">
                                 <div clsas="span10 offset1">
                                     <p>${_('Welcome to the Stakeholder Platform for North-East Madagascar!')}</p>
+                                    <p>
+                                        <strong>${_('The ESAPP Stakeholder Platform North-East Madagascar')} </strong>${_("is a project within the Eastern and Southern African Partnership Programme, designed to provide insight into stakeholder's activities regarding natural resource management in North-East Madagascar.")}
+                                    </p>
                                     <div class="start">
                                         <div class="btn-group">
                                             <a href="/madagascar" class="btn btn-start">${_('Enter')}</a>
@@ -202,96 +201,6 @@ if 'lmkp.use_piwik_analytics' in request.registry.settings:
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-
-                            <div class="row-fluid not-action">
-                                <div class="span offset1">
-                                    ${_('Or take a short tour:')}
-                                </div>
-                            </div>
-
-                            <div class="row-fluid">
-                                <div class="span10 offset1">
-
-                                    <!-- slider -->
-                                    <div id="myCarousel" class="carousel slide">
-                                        <ol class="carousel-indicators">
-                                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                                            <li data-target="#myCarousel" data-slide-to="1"></li>
-                                            <li data-target="#myCarousel" data-slide-to="2"></li>
-                                            <li data-target="#myCarousel" data-slide-to="3"></li>
-                                            <li data-target="#myCarousel" data-slide-to="4"></li>
-                                            <li data-target="#myCarousel" data-slide-to="5"></li>
-                                            <li data-target="#myCarousel" data-slide-to="6"></li>
-                                        </ol>
-
-                                        <!-- Carousel items -->
-                                        <div class="carousel-inner">
-
-
-                                            <div class="item active">
-<!--                                                <div class="not-action2">
-                                                    Or take a short tour.
-                                                </div>-->
-                                                <img class="slide" src="/custom/img/slides/slider-image_02.png" alt="">
-                                                <div class="carousel-caption">
-                                                    <p>${_('Users in select pilot countries gather, explore and analyze spatial data on large-scale land acquisitions. Data is managed and reviewed locally by partners.')}</p>
-                                                </div>
-                                            </div>
-
-                                            <div class="item">
-                                                <img class="slide" src="/custom/img/slides/slider-image_03.png" alt="">
-                                                <div class="carousel-caption">
-                                                    <p>${_('Users can see deals in full geographical context, learn more about investors and the kinds of investments in question.')}</p>
-                                                </div>
-                                            </div>
-
-                                            <div class="item">
-                                                <img class="slide" src="/custom/img/slides/slider-image_04.png" alt="">
-                                                <div class="carousel-caption">
-                                                    <p>${_('You can also select a specific land deal to see more: "who" (investors and other stakeholders) and "what" the land will be used for.')}</p>
-                                                </div>
-                                            </div>
-
-                                            <div class="item">
-                                                <img class="slide" src="/custom/img/slides/slider-image_05.png" alt="">
-                                                <div class="carousel-caption">
-                                                    <p>${_('You can go further and learn more about an investor, seeing the same investor''s other land deals.')}</p>
-                                                </div>
-                                            </div>
-
-                                            <div class="item">
-                                                <img class="slide" src="/custom/img/slides/slider-image_06.png" alt="">
-                                                <div class="carousel-caption">
-                                                    <p>${_('Logged in users can also help contribute and update data, and anybody can freely comment on it.')}</p>
-                                                </div>
-                                            </div>
-
-                                            <div class="item">
-                                                <img class="slide" src="/custom/img/slides/slider-image_07.png" alt="">
-                                                <div class="carousel-caption">
-                                                    <p>${_('You can filter the land deals by various attributes - like size, or crop. Or make a spatial selection of land deals.')}</p>
-                                                </div>
-                                            </div>
-
-                                            <div class="item">
-                                                <img class="slide" src="/custom/img/slides/slider-image_08.png" alt="">
-                                                <div class="carousel-caption">
-                                                    <p>${_('Want to know if anybody lives on a concession? Use the context layers to view population density and more.')}</p>
-                                                </div>
-                                            </div>
-
-                                        </div>
-
-                                        <!-- Carousel nav -->
-                                        <div class="carousel-controls">
-                                                <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-                                                <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
-                                        </div>
-
-                                    </div>
-                                </div>
-
                             </div>
                         </div>
                     </div>

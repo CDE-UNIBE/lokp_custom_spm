@@ -1,6 +1,6 @@
 <%inherit file="lmkp:customization/spm/templates/base.mak" />
 
-<%def name="title()">${_('Grid View')} - ${_('Investors')}</%def>
+<%def name="title()">${_('Grid View')} - ${_('Stakeholders')}</%def>
 
 ## Start of content
 
@@ -24,7 +24,7 @@
 
     <div class="show-investors visible-phone">
         <i class="icon-info-sign"></i>
-        <p>${_('Show deals by clicking on a specific row.')}</p>
+        <p>${_('Show activities by clicking on a specific row.')}</p>
     </div>
 
     <div class="content">
@@ -32,13 +32,13 @@
         ## Spatial Filter
         <%
             spatialFilterBasedOn = _('Profile')
-            spatialFilterExplanation = _('You are seeing all the Investors involved in Deals within the current profile.')
+            spatialFilterExplanation = _('You are seeing all the stakeholders involved in activities within the current profile.')
             spatialFilterLink = None
 
             if spatialfilter == 'mapextentparam' or spatialfilter == 'mapextentcookie':
                 spatialFilterBasedOn = _('Map Extent')
-                spatialFilterExplanation = _('You are currently only seeing Investors involved in Deals which are visible on the map.')
-                spatialFilterLink = _('Show all the Investors involved in Deals of the profile.')
+                spatialFilterExplanation = _('You are currently only seeing stakeholders involved in activities which are visible on the map.')
+                spatialFilterLink = _('Show all the stakeholders involved in activities of the profile.')
         %>
 
         % if spatialfilter:
@@ -61,12 +61,12 @@
         % if invfilter:
         <div class="alert alert-info">
             <i class="icon-filter"></i>&nbsp;
-            <strong>${_('Deal Filter')}</strong>: ${_('You are currently only seeing Investors which are involved in Deal')}
+            <strong>${_('Activity Filter')}</strong>: ${_('You are currently only seeing stakeholders which are involved in activity')}
             % for uid in invfilter:
                 <a href="${request.route_url('activities_read_one', output='html', uid=uid)}">
                     ${uid[:6]}</a>
             % endfor
-            .<br/><a href="${request.route_url('stakeholders_byactivities_all', output='html')}">${_('Remove this filter and show all Investors')}</a>.
+            .<br/><a href="${request.route_url('stakeholders_byactivities_all', output='html')}">${_('Remove this filter and show all stakeholders')}</a>.
         </div>
         % endif
         
@@ -74,7 +74,7 @@
         % if statusfilter:
         <div class="alert alert-info">
             <i class="icon-filter"></i>&nbsp;
-            <strong>${_('Status Filter')}</strong>: ${_('You are only seeing Investors with the following status:')} ${statusfilter}
+            <strong>${_('Status Filter')}</strong>: ${_('You are only seeing stakeholders with the following status:')} ${statusfilter}
         </div>
         % endif
 
@@ -88,13 +88,13 @@
                     [
                         [
                             request.route_url('activities_read_many', output='html')
-                        ], _('Deals')
+                        ], _('Activities')
                     ], [
                         [
                             request.route_url('stakeholders_byactivities_all', output='html'),
                             request.route_url('stakeholders_byactivities', output='html', uids=a_uids),
                             request.route_url('stakeholders_read_many', output='html')
-                        ], _('Investors')
+                        ], _('Stakeholders')
                     ]
                 ]
             %>
@@ -136,7 +136,7 @@
                 ## "Tooltip" when clicking a table row
                 <div class="show-investors-wrapper hidden hidden-phone">
                     <div class="show-investors">
-                        <a href="#">${_('Show deals of this investor')}</a>
+                        <a href="#">${_('Show activities of this stakeholder')}</a>
                     </div>
                 </div>
 
@@ -146,7 +146,7 @@
                     <thead>
                         ## The table headers
                         <tr>
-                            <th>${_('Investor ID')}</th>
+                            <th>${_('Stakeholder ID')}</th>
                             <th>
                                 ${_('Last Change')}
                                 <a href="${getQueryString(request.url, add=[('order_by', 'timestamp'), ('dir', 'asc')])}">
@@ -240,7 +240,7 @@
         ## Pagination
         % if len(data) > 0:
             <%include file="lmkp:templates/parts/pagination.mak"
-                args="totalitems=total, currentpage=currentpage, pagesize=pagesize, itemsname=_('Investors')"
+                args="totalitems=total, currentpage=currentpage, pagesize=pagesize, itemsname=_('Stakeholders')"
             />
         % endif
 

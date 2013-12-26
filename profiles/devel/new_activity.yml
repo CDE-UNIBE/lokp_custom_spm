@@ -1,4 +1,4 @@
-fields:
+﻿fields:
   # [C] 4: General Information
   4:
     order: 1
@@ -43,6 +43,7 @@ fields:
         # [K] 3: State of advancement
         3:
           maintag: true
+          mapsymbol: 2
       # [TG]
       6:
         order: 6

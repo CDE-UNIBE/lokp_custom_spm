@@ -1,6 +1,6 @@
 <%inherit file="lmkp:customization/spm/templates/base.mak" />
 
-<%def name="title()">${_('Grid View')} - ${_('Deals')}</%def>
+<%def name="title()">${_('Grid View')} - ${_('Activities')}</%def>
 
 ## Start of content
 
@@ -24,7 +24,7 @@
 
     <div class="show-investors visible-phone">
         <i class="icon-info-sign"></i>
-        <p>${_('Show investors by click on a specific row.')}</p>
+        <p>${_('Show stakeholders by click on a specific row.')}</p>
     </div>
 
     <div class="content">
@@ -32,13 +32,12 @@
         ## Spatial Filter
         <%
             spatialFilterBasedOn = _('Profile')
-            spatialFilterExplanation = _('You are seeing all the Deals within the current profile.')
+            spatialFilterExplanation = _('You are seeing all the Activities within the current profile.')
             spatialFilterLink = None
 
             if spatialfilter == 'mapextentparam' or spatialfilter == 'mapextentcookie':
                 spatialFilterBasedOn = _('Map Extent')
-                spatialFilterExplanation = _('You are currently only seeing Deals which are visible on the map.')
-                spatialFilterLink = _('Show all Deals of the profile.')
+                spatialFilterExplanation = _('You are currently only seeing activities which are visible on the map.')
         %>
 
         % if spatialfilter:
@@ -61,12 +60,12 @@
         % if invfilter:
         <div class="alert alert-info">
             <i class="icon-filter"></i>&nbsp;
-            <strong>${_('Investor Filter')}</strong>: ${_('You are currently only seeing Deals where Investor')}
+            <strong>${_('Investor Filter')}</strong>: ${_('You are currently only seeing activities where stakeholder')}
             % for uid in invfilter:
                 <a href="${request.route_url('stakeholders_read_one', output='html', uid=uid)}">
                     ${uid[:6]}</a>
             % endfor
-            ${_('is involved.')}<br/><a href="${request.route_url('activities_read_many', output='html')}">${_('Remove this filter and show all Deals')}</a>.
+            ${_('is involved.')}<br/><a href="${request.route_url('activities_read_many', output='html')}">${_('Remove this filter and show all activities')}</a>.
         </div>
         % endif
         
@@ -74,7 +73,7 @@
         % if statusfilter:
         <div class="alert alert-info">
             <i class="icon-filter"></i>&nbsp;
-            <strong>${_('Status Filter')}</strong>: ${_('You are only seeing Deals with the following status:')} ${statusfilter}
+            <strong>${_('Status Filter')}</strong>: ${_('You are only seeing activities with the following status:')} ${statusfilter}
         </div>
         % endif
 
@@ -89,11 +88,11 @@
                         [
                             request.route_url('activities_read_many', output='html'),
                             request.route_url('activities_bystakeholders', output='html', uids=sh_uids)
-                        ], _('Deals')
+                        ], _('Activities')
                     ], [
                         [
                             request.route_url('stakeholders_byactivities_all', output='html')
-                        ], _('Investors')
+                        ], _('Stakeholders')
                     ]
                 ]
             %>
@@ -128,7 +127,7 @@
                 <p>&nbsp;</p>
                 <h5>${_('Nothing found')}</h5>
                 <p>${_('No results were found.')}</p>
-                <p>${_('Make sure there are some deals on the')} <a href="${request.route_url('map_view')}">${_('Map')}</a>.</p>
+                <p>${_('Make sure there are some activities on the')} <a href="${request.route_url('map_view')}">${_('Map')}</a>.</p>
                 <p>&nbsp;</p>
 
             % else:
@@ -136,7 +135,7 @@
                 ## "Tooltip" when clicking a table row
                 <div class="show-investors-wrapper hidden hidden-phone">
                     <div class="show-investors">
-                        <a href="#">${_('Show investors for this deal')}</a>
+                        <a href="#">${_('Show stakeholders for this activity')}</a>
                     </div>
                 </div>
 
@@ -146,7 +145,7 @@
                     <thead>
                         ## The table headers
                         <tr>
-                            <th>${_('Deal ID')}</th>
+                            <th>${_('Activity ID')}</th>
                             <th>
                                 ${_('Last Change')}
                                 <a href="${getQueryString(request.url, add=[('order_by', 'timestamp'), ('dir', 'asc')])}">
@@ -240,7 +239,7 @@
         ## Pagination
         % if len(data) > 0:
             <%include file="lmkp:templates/parts/pagination.mak"
-                args="totalitems=total, currentpage=currentpage, pagesize=pagesize, itemsname=_('Deals')"
+                args="totalitems=total, currentpage=currentpage, pagesize=pagesize, itemsname=_('Activities')"
             />
         % endif
 

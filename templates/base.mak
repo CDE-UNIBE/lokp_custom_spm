@@ -31,9 +31,9 @@ if 'lmkp.use_piwik_analytics' in request.registry.settings:
         <title>
             <%
                 try:
-                    context.write("%s - %s" % (self.title(), _("Land Observatory")))
+                    context.write("%s - %s" % (self.title(), _("ESAPP Stakeholder Platform North-East Madagascar")))
                 except AttributeError:
-                    context.write(_("Land Observatory"))
+                    context.write(_("ESAPP Stakeholder Platform North-East Madagascar"))
             %>
         </title>
         <meta name="description" content="" />
@@ -148,7 +148,7 @@ if 'lmkp.use_piwik_analytics' in request.registry.settings:
                                         >
                                         <a href="${request.route_url('activities_read_many', output='form')}" >
                                             <i class="icon-pencil"></i>
-                                            ${_('New Deal')}
+                                            ${_('New Activity')}
                                         </a>
                                     </li>
                                 % endif

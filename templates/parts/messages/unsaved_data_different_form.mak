@@ -2,16 +2,16 @@
 ${_('Unsaved data from another form was found in the session.')} ${_('It contains:')}
 
 % if type == 'activities':
-    ${_('Deal')}
+    ${_('Activity')}
     % if name == '':
-        ${_('New Deal')}
+        ${_('New activity')}
     % else:
         ${name}
     % endif
 % else:
-    ${_('Investor')}
+    ${_('Stakeholder')}
     % if name == '':
-        ${_('New Investor')}
+        ${_('New stakeholder')}
     % else:
         ${name}
     % endif
@@ -19,4 +19,4 @@ ${_('Unsaved data from another form was found in the session.')} ${_('It contain
 . ${_('These changes will be lost if you continue to edit this form.')}
 <br/>
 
-<a href="${url}">${_('See the unsaved changes of this Deal and submit it.')}</a>
+<a href="${url}">${_('See the unsaved changes of this Activity and submit it.')}</a>
