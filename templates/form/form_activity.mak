@@ -6,7 +6,7 @@
     _ = request.translate
 %>
 
-    <h3>${_('Deal Editor')}</h3>
+    <h3>${_('Activity Editor')}</h3>
 
     % if new_form is True:
         <p class="id">${_('New Deal')}</p>

@@ -7,29 +7,29 @@ UPDATE data.a_values SET "value" = 'Water', fk_a_key = 83, "order" = 11 WHERE id
 
 
 -- Add new 190 (DRR or emergency relief)
-INSERT INTO data.a_values (id, fk_a_value, fk_language, value, fk_a_key, "order") VALUES
-  (190, NULL, 1, 'DRR or emergency relief', 83, 12)
-;
+--INSERT INTO data.a_values (id, fk_a_value, fk_language, value, fk_a_key, "order") VALUES
+--  (190, NULL, 1, 'DRR or emergency relief', 83, 12)
+--;
 
 -- Add new 191 (Water supply and management)
-INSERT INTO data.a_values (id, fk_a_value, fk_language, value, fk_a_key, "order") VALUES
-  (191, NULL, 1, 'Water supply and management', 2, 21)
-;
+--INSERT INTO data.a_values (id, fk_a_value, fk_language, value, fk_a_key, "order") VALUES
+ -- (191, NULL, 1, 'Water supply and management', 2, 21)
+--;
 
 -- Add new 192 (Sanitation)
-INSERT INTO data.a_values (id, fk_a_value, fk_language, value, fk_a_key, "order") VALUES
-  (192, NULL, 1, 'Sanitation', 2, 22)
-;
+--INSERT INTO data.a_values (id, fk_a_value, fk_language, value, fk_a_key, "order") VALUES
+  --(192, NULL, 1, 'Sanitation', 2, 22)
+--;
 
 -- Add new 193 (Disaster risk reduction)
-INSERT INTO data.a_values (id, fk_a_value, fk_language, value, fk_a_key, "order") VALUES
-  (193, NULL, 1, 'Disaster risk reduction', 2, 23)
-;
+--INSERT INTO data.a_values (id, fk_a_value, fk_language, value, fk_a_key, "order") VALUES
+  --(193, NULL, 1, 'Disaster risk reduction', 2, 23)
+--;
 
 -- Add new 194 (Emergency relief)
-INSERT INTO data.a_values (id, fk_a_value, fk_language, value, fk_a_key, "order") VALUES
-  (194, NULL, 1, 'Emergency relief', 2, 24)
-;
+--INSERT INTO data.a_values (id, fk_a_value, fk_language, value, fk_a_key, "order") VALUES
+  --(194, NULL, 1, 'Emergency relief', 2, 24)
+--;
 
 -- Update order of 11 (Ecotourism)
 UPDATE data.a_values SET "order" = 9 WHERE id = 11;
@@ -72,38 +72,38 @@ UPDATE data.a_values SET "order" = 25 WHERE id = 18;
 
 
 -- Add new 195 (Settlements)
-INSERT INTO data.a_values (id, fk_a_value, fk_language, value, fk_a_key, "order") VALUES
-  (195, NULL, 1, 'Settlements', 18, 13)
-;
+--INSERT INTO data.a_values (id, fk_a_value, fk_language, value, fk_a_key, "order") VALUES
+  --(195, NULL, 1, 'Settlements', 18, 13)
+--;
 
 -- Update order of 123 (Other)
 UPDATE data.a_values SET "order" = 14 WHERE id = 123;
 
 
 -- Add new 196 (Sugarcane)
-INSERT INTO data.a_values (id, fk_a_value, fk_language, value, fk_a_key, "order") VALUES
-  (196, NULL, 1, 'Sugarcane', 71, 6)
-;
+--INSERT INTO data.a_values (id, fk_a_value, fk_language, value, fk_a_key, "order") VALUES
+  --(196, NULL, 1, 'Sugarcane', 71, 6)
+--;
 
 -- Add new 197 (Honey)
-INSERT INTO data.a_values (id, fk_a_value, fk_language, value, fk_a_key, "order") VALUES
-  (197, NULL, 1, 'Honey', 71, 12)
-;
+--INSERT INTO data.a_values (id, fk_a_value, fk_language, value, fk_a_key, "order") VALUES
+  --(197, NULL, 1, 'Honey', 71, 12)
+--;
 
 -- Add new 198 (Poultry)
-INSERT INTO data.a_values (id, fk_a_value, fk_language, value, fk_a_key, "order") VALUES
-  (198, NULL, 1, 'Poultry', 71, 13)
-;
+--INSERT INTO data.a_values (id, fk_a_value, fk_language, value, fk_a_key, "order") VALUES
+  --(198, NULL, 1, 'Poultry', 71, 13)
+--;
 
 -- Add new 199 (Cattle)
-INSERT INTO data.a_values (id, fk_a_value, fk_language, value, fk_a_key, "order") VALUES
-  (199, NULL, 1, 'Cattle', 71, 14)
-;
+--INSERT INTO data.a_values (id, fk_a_value, fk_language, value, fk_a_key, "order") VALUES
+  --(199, NULL, 1, 'Cattle', 71, 14)
+--;
 
 -- Add new 200 (Porc)
-INSERT INTO data.a_values (id, fk_a_value, fk_language, value, fk_a_key, "order") VALUES
-  (200, NULL, 1, 'Porc', 71, 15)
-;
+--INSERT INTO data.a_values (id, fk_a_value, fk_language, value, fk_a_key, "order") VALUES
+  --(200, NULL, 1, 'Porc', 71, 15)
+--;
 
 -- Replace 146 (deleted) with Coffee, update order
 UPDATE data.a_values SET "value" = 'Coffee', "order" = 4 WHERE id = 146;
@@ -134,14 +134,14 @@ UPDATE data.a_values SET "order" = 17 WHERE id = 153;
 
 
 -- Add new 201 (Raffia)
-INSERT INTO data.a_values (id, fk_a_value, fk_language, value, fk_a_key, "order") VALUES
-  (201, NULL, 1, 'Raffia', 73, 3)
-;
+--INSERT INTO data.a_values (id, fk_a_value, fk_language, value, fk_a_key, "order") VALUES
+  --(201, NULL, 1, 'Raffia', 73, 3)
+--;
 
 -- Add new 202 (Gems)
-INSERT INTO data.a_values (id, fk_a_value, fk_language, value, fk_a_key, "order") VALUES
-  (202, NULL, 1, 'Gems', 73, 4)
-;
+--INSERT INTO data.a_values (id, fk_a_value, fk_language, value, fk_a_key, "order") VALUES
+  --(202, NULL, 1, 'Gems', 73, 4)
+--;
 
 -- Update order of 160 (Metals)
 UPDATE data.a_values SET "order" = 5 WHERE id = 160;
@@ -178,9 +178,9 @@ UPDATE data.sh_values SET "value" = 'Ecotourism' WHERE id = 258;
 UPDATE data.sh_values SET "value" = 'Industrial mining' WHERE id = 259;
 
 -- Add new 308 (Artisanal mining)
-INSERT INTO data.sh_values (id, fk_sh_value, fk_language, value, fk_sh_key, "order") VALUES
-  (308, NULL, 1, 'Artisanal mining', 3, 11)
-;
+--INSERT INTO data.sh_values (id, fk_sh_value, fk_language, value, fk_sh_key, "order") VALUES
+  --(308, NULL, 1, 'Artisanal mining', 3, 11)
+--;
 
 -- Update order of 260 (Education)
 UPDATE data.sh_values SET "order" = 12 WHERE id = 260;
@@ -204,34 +204,34 @@ UPDATE data.sh_values SET "order" = 17 WHERE id = 265;
 UPDATE data.sh_values SET "order" = 18 WHERE id = 266;
 
 -- Add new 309 (Irrigation infrastructure construction)
-INSERT INTO data.sh_values (id, fk_sh_value, fk_language, value, fk_sh_key, "order") VALUES
-  (309, NULL, 1, 'Irrigation infrastructure construction', 3, 19)
-;
+--INSERT INTO data.sh_values (id, fk_sh_value, fk_language, value, fk_sh_key, "order") VALUES
+  --(309, NULL, 1, 'Irrigation infrastructure construction', 3, 19)
+--;
 
 -- Add new 310 (Road infrastructure construction)
-INSERT INTO data.sh_values (id, fk_sh_value, fk_language, value, fk_sh_key, "order") VALUES
-  (310, NULL, 1, 'Road infrastructure construction', 3, 20)
-;
+--INSERT INTO data.sh_values (id, fk_sh_value, fk_language, value, fk_sh_key, "order") VALUES
+  --(310, NULL, 1, 'Road infrastructure construction', 3, 20)
+--;
 
 -- Add new 311 (Water supply and management)
-INSERT INTO data.sh_values (id, fk_sh_value, fk_language, value, fk_sh_key, "order") VALUES
-  (311, NULL, 1, 'Water supply and management', 3, 21)
-;
+--INSERT INTO data.sh_values (id, fk_sh_value, fk_language, value, fk_sh_key, "order") VALUES
+  --(311, NULL, 1, 'Water supply and management', 3, 21)
+--;
 
 -- Add new 312 (Sanitation)
-INSERT INTO data.sh_values (id, fk_sh_value, fk_language, value, fk_sh_key, "order") VALUES
-  (312, NULL, 1, 'Sanitation', 3, 22)
-;
+--INSERT INTO data.sh_values (id, fk_sh_value, fk_language, value, fk_sh_key, "order") VALUES
+  --(312, NULL, 1, 'Sanitation', 3, 22)
+--;
 
 -- Add new 313 (Disaster risk reduction)
-INSERT INTO data.sh_values (id, fk_sh_value, fk_language, value, fk_sh_key, "order") VALUES
-  (313, NULL, 1, 'Disaster risk reduction', 3, 23)
-;
+--INSERT INTO data.sh_values (id, fk_sh_value, fk_language, value, fk_sh_key, "order") VALUES
+  --(313, NULL, 1, 'Disaster risk reduction', 3, 23)
+--;
 
 -- Add new 314 (Emergency relief)
-INSERT INTO data.sh_values (id, fk_sh_value, fk_language, value, fk_sh_key, "order") VALUES
-  (314, NULL, 1, 'Emergency relief', 3, 24)
-;
+--INSERT INTO data.sh_values (id, fk_sh_value, fk_language, value, fk_sh_key, "order") VALUES
+  --(314, NULL, 1, 'Emergency relief', 3, 24)
+--;
 
 -- Update order of 267 (Other)
 UPDATE data.sh_values SET "order" = 25 WHERE id = 267;
@@ -242,7 +242,7 @@ SELECT setval('data.sh_values_id_seq', 314, true);
 /*
   LANGUAGES
 */
-INSERT INTO data.languages(id, english_name, local_name, locale) VALUES
-    (2, 'French', 'Français', 'fr')
-;
+--INSERT INTO data.languages(id, english_name, local_name, locale) VALUES
+  --  (2, 'French', 'FranÃ§ais', 'fr')
+--;
 SELECT setval('data.languages_id_seq', 2, true);
