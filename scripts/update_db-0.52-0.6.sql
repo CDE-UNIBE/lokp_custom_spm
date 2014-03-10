@@ -35,9 +35,9 @@ UPDATE data.a_values SET "value" = 'Ecotourism', "order" = 10 WHERE id = 11;
 UPDATE data.a_values SET "value" = 'Industrial mining', "order" = 11 WHERE id = 9;
 
 -- Add new 187 (Artisanal Mining)
-INSERT INTO data.a_values (id, fk_a_value, fk_language, value, fk_a_key, "order") VALUES
-  (187, NULL, 1, 'Artisanal Mining', 2, 12)
-;
+--INSERT INTO data.a_values (id, fk_a_value, fk_language, value, fk_a_key, "order") VALUES
+--  (187, NULL, 1, 'Artisanal Mining', 2, 12)
+--;
 
 -- Update order of 10 (Education)
 UPDATE data.a_values SET "order" = 13 WHERE id = 10;
@@ -61,14 +61,14 @@ UPDATE data.a_values SET "order" = 18 WHERE id = 16;
 UPDATE data.a_values SET "order" = 19 WHERE id = 17;
 
 -- Add new 188 (Irrigation infrastructure construction)
-INSERT INTO data.a_values (id, fk_a_value, fk_language, value, fk_a_key, "order") VALUES
-  (188, NULL, 1, 'Irrigation infrastructure construction', 2, 20)
-;
+--INSERT INTO data.a_values (id, fk_a_value, fk_language, value, fk_a_key, "order") VALUES
+--  (188, NULL, 1, 'Irrigation infrastructure construction', 2, 20)
+--;
 
 -- Add new 189 (Road infrastructure construction)
-INSERT INTO data.a_values (id, fk_a_value, fk_language, value, fk_a_key, "order") VALUES
-  (189, NULL, 1, 'Road infrastructure construction', 2, 21)
-;
+--INSERT INTO data.a_values (id, fk_a_value, fk_language, value, fk_a_key, "order") VALUES
+--  (189, NULL, 1, 'Road infrastructure construction', 2, 21)
+--;
 
 -- Update order of 18 (Other)
 UPDATE data.a_values SET "order" = 22 WHERE id = 18;
@@ -77,8 +77,8 @@ UPDATE data.a_values SET "order" = 22 WHERE id = 18;
 SELECT setval('data.a_values_id_seq', 189, true);
 
 -- Add new Categories
-INSERT INTO data.categories(id, name, type, fk_language, description, fk_category) VALUES
-  (25, 'Why Madagascar?', 'stakeholders', 1, NULL, NULL),
-  (26, 'External factors', 'stakeholders', 1, NULL, NULL)
-;
+--INSERT INTO data.categories(id, name, type, fk_language, description, fk_category) VALUES
+  --(25, 'Why Madagascar?', 'stakeholders', 1, NULL, NULL),
+  --(26, 'External factors', 'stakeholders', 1, NULL, NULL)
+--;
 SELECT setval('data.categories_id_seq', 26, true);

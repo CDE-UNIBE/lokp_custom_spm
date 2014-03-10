@@ -8,10 +8,10 @@
 
     if isStakeholder:
         routeName = 'stakeholders_read_one'
-        editLinkText = _('Edit this Investor')
+        editLinkText = _('Edit this Stakeholder')
     else:
         routeName = 'activities_read_one'
-        editLinkText = _('Edit this Deal')
+        editLinkText = _('Edit this Activity')
 %>
 
 % if statusId != '2':
