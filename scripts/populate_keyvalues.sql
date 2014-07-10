@@ -12,6 +12,8 @@
   - Profiles (Madagascar)
   - Stakeholder Roles
 
+  It also links user 1 (admin) with the madagascar profile.
+
 */
 
 -- CATEGORIES
@@ -858,6 +860,11 @@ SELECT setval('data.sh_values_id_seq', 314, true);
 INSERT INTO data.profiles (id, code, polygon) VALUES
   (1, 'madagascar', '0103000020E610000001000000050000001F85EB51B89E45406666666666E627C000000000004049406666666666E627C00000000000404940D7A3703D0A9739C01F85EB51B89E4540D7A3703D0A9739C01F85EB51B89E45406666666666E627C0');
 SELECT setval('data.profiles_id_seq', 1, true);
+
+INSERT INTO data.users_profiles(id, fk_user, fk_profile) VALUES 
+  (1, 1, 1)
+;
+SELECT setval('data.users_profiles_id_seq', 1, true);
 
 -- STAKEHOLDER_ROLES
 INSERT INTO data.stakeholder_roles(id, name, description) VALUES

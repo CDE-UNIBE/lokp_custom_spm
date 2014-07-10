@@ -584,7 +584,7 @@ msgstr "Vérifier qu'il ya des activités sur"
 
 #: lmkp/customization/spm/templates/activities/grid.mak:138
 msgid "Show stakeholders for this activity"
-msgstr "Consulter les investisseurs pour cette transaction"
+msgstr "Consulter les acteurs pour cette transaction"
 
 #: lmkp/customization/spm/templates/activities/grid.mak:148
 msgid "Activity ID"
@@ -807,7 +807,7 @@ msgstr "Version en attente"
 
 #: lmkp/customization/spm/templates/form/readonly/form.mak:24
 msgid "You are seeing a pending version which needs to be reviewed before it is publicly visible."
-msgstr "Vous consultez ici une version en cours de construction qui doit être vérifiée avant d'être redue publique."
+msgstr "Vous consultez ici une version en cours de construction qui doit être vérifiée avant d'être rendue publique."
 
 #: lmkp/customization/spm/templates/form/readonly/form.mak:27
 msgid "Inactive Version"
@@ -989,7 +989,7 @@ msgstr "Vous consultez ici seulement les acteurs impliquées dans les activités
 
 #: lmkp/customization/spm/templates/stakeholders/grid.mak:41
 msgid "Show all the stakeholders involved in activities of the profile."
-msgstr "Consultez tous les investisseurs impliqués dans les transactions du profile."
+msgstr "Consultez tous les acteurs impliqués dans les transactions du profile."
 
 #: lmkp/customization/spm/templates/stakeholders/grid.mak:64
 msgid "Activity Filter"
