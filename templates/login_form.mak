@@ -61,7 +61,7 @@ if 'lmkp.mode' in request.registry.settings:
                 <p class="lead">${_('This is the demonstration version of the')} <a href="http://www.landobservatory.org">${_('Land Observatory')}</a>.</p>
                 <p>${_(u"Any member of the public can log-in as an Editor or a Moderator.")}</p>
 
-                <p><strong>${_('Editor')}</strong> ${_('has the permission to create or edit new Deals or Investors.')}</p>
+                <p><strong>${_('Editor')}</strong> ${_('has the permission to create or edit new Activities or Stakeholders.')}</p>
                 <p class="login-info">
                     ${_('Username')}: editor<br/>
                     ${_('Password')}: editor

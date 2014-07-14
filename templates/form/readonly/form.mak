@@ -79,7 +79,7 @@
                                 <h6 class="map-deals">
                                     <a class="accordion-toggle" data-toggle="collapse" data-parent="#form-map-menu-content" href="#thisLayer">
                                         <i class="icon-chevron-down"></i>
-                                        ${_('This Deal')}
+                                        ${_('This Activity')}
                                     </a>
                                 </h6>
                                 <div id="thisLayer" class="accordion-body collapse in">
@@ -94,7 +94,7 @@
                                 <h6 class="map-deals">
                                     <a class="accordion-toggle" data-toggle="collapse" data-parent="#form-map-menu-content" href="#contentLayers">
                                         <i class="icon-chevron-right"></i>
-                                        ${_('All Deals')}
+                                        ${_('All Activities')}
                                     </a>
                                 </h6>
                                 <div id="contentLayers" class="accordion-body collapse">

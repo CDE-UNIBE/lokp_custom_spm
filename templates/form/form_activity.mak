@@ -9,7 +9,7 @@
     <h3>${_('Activity Editor')}</h3>
 
     % if new_form is True:
-        <p class="id">${_('New Deal')}</p>
+        <p class="id">${_('New Activity')}</p>
     % else:
         <p class="id">${cstruct['id']}</p>
     % endif
