@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LMKP_Customization 0.0.0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-07-14 09:38+0200\n"
+"POT-Creation-Date: 2014-07-14 13:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -862,6 +862,18 @@ msgstr ""
 msgid "New Stakeholder"
 msgstr ""
 
+#: lmkp/customization/spm/templates/form/readonly/customInvolvementMappingActivity.mak:5
+msgid "Involvement as"
+msgstr ""
+
+#: lmkp/customization/spm/templates/form/readonly/customInvolvementMappingActivity.mak:14
+msgid "View Activity"
+msgstr ""
+
+#: lmkp/customization/spm/templates/form/readonly/customInvolvementMappingStakeholder.mak:14
+msgid "View Stakeholder"
+msgstr ""
+
 #: lmkp/customization/spm/templates/form/readonly/form.mak:12
 msgid "Edit this Stakeholder"
 msgstr ""
@@ -948,6 +960,10 @@ msgstr ""
 msgid "Click here to add a filter"
 msgstr ""
 
+#: lmkp/customization/spm/templates/parts/items/stakeholder_role.mak:1
+msgid "Stakeholder Role"
+msgstr ""
+
 #: lmkp/customization/spm/templates/parts/messages/activity_created_success.mak:1
 #: lmkp/customization/spm/templates/parts/messages/stakeholder_created_success.mak:1
 #: lmkp/customization/spm/templates/parts/messages/stakeholder_created_through_involvement.mak:1
@@ -981,6 +997,18 @@ msgid ""
 "The version you requested cannot be displayed. It is not valid according to "
 "the configuration of the application, which can be the case for older "
 "versions. Please select a newer version from the history page."
+msgstr ""
+
+#: lmkp/customization/spm/templates/parts/messages/one_of_involved_activities_cannot_be_reviewed.mak:1
+msgid ""
+"At least one of the involved Activities cannot be reviewed. Click on the icon"
+" next to the involvement for further details."
+msgstr ""
+
+#: lmkp/customization/spm/templates/parts/messages/one_of_involved_stakeholders_cannot_be_reviewed.mak:1
+msgid ""
+"At least one of the involved Stakeholders cannot be reviewed. Click on the "
+"icon next to the involvement for further details."
 msgstr ""
 
 #: lmkp/customization/spm/templates/parts/messages/stakeholder_created_success.mak:2
