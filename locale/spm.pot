@@ -1,15 +1,15 @@
 # Translations template for LMKP_Customization.
-# Copyright (C) 2013 ORGANIZATION
+# Copyright (C) 2014 ORGANIZATION
 # This file is distributed under the same license as the LMKP_Customization
 # project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2013.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2014.
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: LMKP_Customization 0.0.0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-12-23 13:03+0100\n"
+"POT-Creation-Date: 2014-07-14 13:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -122,6 +122,7 @@ msgid "Charts"
 msgstr ""
 
 #: lmkp/customization/spm/templates/base.mak:151
+#: lmkp/customization/spm/templates/form/form_activity.mak:12
 msgid "New Activity"
 msgstr ""
 
@@ -339,7 +340,7 @@ msgid "Editor"
 msgstr ""
 
 #: lmkp/customization/spm/templates/login_form.mak:64
-msgid "has the permission to create or edit new Deals or Investors."
+msgid "has the permission to create or edit new Activities or Stakeholders."
 msgstr ""
 
 #: lmkp/customization/spm/templates/login_form.mak:70
@@ -385,7 +386,7 @@ msgstr ""
 
 #: lmkp/customization/spm/templates/map_view.mak:36
 #: lmkp/customization/spm/templates/activities/grid.mak:95
-#: lmkp/customization/spm/templates/parts/filter.mak:53
+#: lmkp/customization/spm/templates/parts/filter.mak:54
 #: lmkp/customization/spm/templates/stakeholders/grid.mak:3
 #: lmkp/customization/spm/templates/stakeholders/grid.mak:97
 msgid "Stakeholders"
@@ -401,7 +402,7 @@ msgstr ""
 
 #: lmkp/customization/spm/templates/map_view.mak:39
 #: lmkp/customization/spm/templates/map_view.mak:91
-#: lmkp/customization/spm/templates/form/readonly/form.mak:106
+#: lmkp/customization/spm/templates/form/readonly/form.mak:108
 #: lmkp/customization/spm/templates/review/readonly/form.mak:80
 msgid "Loading ..."
 msgstr ""
@@ -437,31 +438,31 @@ msgid "Activities"
 msgstr ""
 
 #: lmkp/customization/spm/templates/map_view.mak:108
-#: lmkp/customization/spm/templates/form/readonly/form.mak:124
+#: lmkp/customization/spm/templates/form/readonly/form.mak:126
 #: lmkp/customization/spm/templates/review/readonly/form.mak:98
 msgid "Base layers"
 msgstr ""
 
 #: lmkp/customization/spm/templates/map_view.mak:113
-#: lmkp/customization/spm/templates/form/readonly/form.mak:130
+#: lmkp/customization/spm/templates/form/readonly/form.mak:132
 #: lmkp/customization/spm/templates/review/readonly/form.mak:104
 msgid "Street Map"
 msgstr ""
 
 #: lmkp/customization/spm/templates/map_view.mak:116
-#: lmkp/customization/spm/templates/form/readonly/form.mak:133
+#: lmkp/customization/spm/templates/form/readonly/form.mak:135
 #: lmkp/customization/spm/templates/review/readonly/form.mak:107
 msgid "Satellite Imagery"
 msgstr ""
 
 #: lmkp/customization/spm/templates/map_view.mak:119
-#: lmkp/customization/spm/templates/form/readonly/form.mak:136
+#: lmkp/customization/spm/templates/form/readonly/form.mak:138
 #: lmkp/customization/spm/templates/review/readonly/form.mak:110
 msgid "Terrain Map"
 msgstr ""
 
 #: lmkp/customization/spm/templates/map_view.mak:129
-#: lmkp/customization/spm/templates/form/readonly/form.mak:146
+#: lmkp/customization/spm/templates/form/readonly/form.mak:148
 #: lmkp/customization/spm/templates/review/readonly/form.mak:121
 msgid "Context layers"
 msgstr ""
@@ -536,7 +537,7 @@ msgstr ""
 
 #: lmkp/customization/spm/templates/activities/compare.mak:106
 #: lmkp/customization/spm/templates/activities/review.mak:95
-#: lmkp/customization/spm/templates/form/readonly/form.mak:175
+#: lmkp/customization/spm/templates/form/readonly/form.mak:177
 #: lmkp/customization/spm/templates/parts/messages/comparison_not_valid.mak:4
 #: lmkp/customization/spm/templates/parts/messages/item_requested_not_valid.mak:4
 #: lmkp/customization/spm/templates/stakeholders/compare.mak:106
@@ -545,7 +546,8 @@ msgid "History"
 msgstr ""
 
 #: lmkp/customization/spm/templates/activities/details.mak:3
-msgid "Deal Details"
+#: lmkp/customization/spm/templates/form/readonly/form.mak:54
+msgid "Activity Details"
 msgstr ""
 
 #: lmkp/customization/spm/templates/activities/details.mak:36
@@ -554,6 +556,7 @@ msgid "Loading comments ..."
 msgstr ""
 
 #: lmkp/customization/spm/templates/activities/form.mak:3
+#: lmkp/customization/spm/templates/form/form_activity.mak:9
 msgid "Activity Editor"
 msgstr ""
 
@@ -595,7 +598,7 @@ msgid "based on"
 msgstr ""
 
 #: lmkp/customization/spm/templates/activities/grid.mak:63
-msgid "Investor Filter"
+msgid "Stakeholder Filter"
 msgstr ""
 
 #: lmkp/customization/spm/templates/activities/grid.mak:63
@@ -660,7 +663,7 @@ msgstr ""
 
 #: lmkp/customization/spm/templates/activities/grid.mak:197
 #: lmkp/customization/spm/templates/activities/grid.mak:199
-#: lmkp/customization/spm/templates/form/customInvolvementMapping.mak:72
+#: lmkp/customization/spm/templates/form/customInvolvementMapping.mak:73
 #: lmkp/customization/spm/templates/stakeholders/grid.mak:198
 #: lmkp/customization/spm/templates/stakeholders/grid.mak:200
 msgid "Unknown"
@@ -842,20 +845,12 @@ msgstr ""
 msgid "Create a new Stakeholder"
 msgstr ""
 
-#: lmkp/customization/spm/templates/form/customInvolvementMapping.mak:73
+#: lmkp/customization/spm/templates/form/customInvolvementMapping.mak:74
 msgid "No results found."
 msgstr ""
 
-#: lmkp/customization/spm/templates/form/customInvolvementMapping.mak:74
+#: lmkp/customization/spm/templates/form/customInvolvementMapping.mak:75
 msgid "Too many results to display. Try to enter more characters"
-msgstr ""
-
-#: lmkp/customization/spm/templates/form/form_activity.mak:9
-msgid "Deal Editor"
-msgstr ""
-
-#: lmkp/customization/spm/templates/form/form_activity.mak:12
-msgid "New Deal"
 msgstr ""
 
 #: lmkp/customization/spm/templates/form/form_stakeholder.mak:9
@@ -867,68 +862,77 @@ msgstr ""
 msgid "New Stakeholder"
 msgstr ""
 
-#: lmkp/customization/spm/templates/form/readonly/form.mak:11
-msgid "Edit this Investor"
+#: lmkp/customization/spm/templates/form/readonly/customInvolvementMappingActivity.mak:5
+msgid "Involvement as"
 msgstr ""
 
-#: lmkp/customization/spm/templates/form/readonly/form.mak:14
-msgid "Edit this Deal"
+#: lmkp/customization/spm/templates/form/readonly/customInvolvementMappingActivity.mak:14
+msgid "View Activity"
 msgstr ""
 
-#: lmkp/customization/spm/templates/form/readonly/form.mak:23
+#: lmkp/customization/spm/templates/form/readonly/customInvolvementMappingStakeholder.mak:14
+msgid "View Stakeholder"
+msgstr ""
+
+#: lmkp/customization/spm/templates/form/readonly/form.mak:12
+msgid "Edit this Stakeholder"
+msgstr ""
+
+#: lmkp/customization/spm/templates/form/readonly/form.mak:16
+msgid "Edit this Activity"
+msgstr ""
+
+#: lmkp/customization/spm/templates/form/readonly/form.mak:25
 msgid "Pending Version"
 msgstr ""
 
-#: lmkp/customization/spm/templates/form/readonly/form.mak:24
+#: lmkp/customization/spm/templates/form/readonly/form.mak:26
 msgid ""
 "You are seeing a pending version which needs to be reviewed before it is "
 "publicly visible."
 msgstr ""
 
-#: lmkp/customization/spm/templates/form/readonly/form.mak:27
+#: lmkp/customization/spm/templates/form/readonly/form.mak:29
 msgid "Inactive Version"
 msgstr ""
 
-#: lmkp/customization/spm/templates/form/readonly/form.mak:28
+#: lmkp/customization/spm/templates/form/readonly/form.mak:30
 msgid "You are seeing an inactive version which is not active anymore."
 msgstr ""
 
-#: lmkp/customization/spm/templates/form/readonly/form.mak:32
+#: lmkp/customization/spm/templates/form/readonly/form.mak:34
 msgid "Not an active Version"
 msgstr ""
 
-#: lmkp/customization/spm/templates/form/readonly/form.mak:33
+#: lmkp/customization/spm/templates/form/readonly/form.mak:35
 msgid "You are seeing a version which is not active."
 msgstr ""
 
-#: lmkp/customization/spm/templates/form/readonly/form.mak:50
+#: lmkp/customization/spm/templates/form/readonly/form.mak:52
 #: lmkp/customization/spm/templates/stakeholders/details.mak:3
 msgid "Stakeholder Details"
 msgstr ""
 
-#: lmkp/customization/spm/templates/form/readonly/form.mak:52
-msgid "Activity Details"
-msgstr ""
-
-#: lmkp/customization/spm/templates/form/readonly/form.mak:72
+#: lmkp/customization/spm/templates/form/readonly/form.mak:74
 #: lmkp/customization/spm/templates/review/readonly/form.mak:61
 msgid "Turn layers on and off"
 msgstr ""
 
-#: lmkp/customization/spm/templates/form/readonly/form.mak:80
-msgid "This Deal"
+#: lmkp/customization/spm/templates/form/readonly/form.mak:82
+msgid "This Activity"
 msgstr ""
 
-#: lmkp/customization/spm/templates/form/readonly/form.mak:95
-msgid "All Deals"
+#: lmkp/customization/spm/templates/form/readonly/form.mak:97
+#: lmkp/customization/spm/templates/review/readonly/form.mak:69
+msgid "All Activities"
 msgstr ""
 
-#: lmkp/customization/spm/templates/form/readonly/form.mak:183
+#: lmkp/customization/spm/templates/form/readonly/form.mak:185
 msgid "Review"
 msgstr ""
 
 #: lmkp/customization/spm/templates/parts/filter.mak:15
-#: lmkp/customization/spm/templates/parts/filter.mak:73
+#: lmkp/customization/spm/templates/parts/filter.mak:75
 msgid "Value"
 msgstr ""
 
@@ -944,16 +948,20 @@ msgstr ""
 msgid "Key"
 msgstr ""
 
-#: lmkp/customization/spm/templates/parts/filter.mak:101
+#: lmkp/customization/spm/templates/parts/filter.mak:103
 msgid "filter is active, click here to edit"
 msgstr ""
 
-#: lmkp/customization/spm/templates/parts/filter.mak:103
+#: lmkp/customization/spm/templates/parts/filter.mak:105
 msgid "filters are active, click here to edit"
 msgstr ""
 
-#: lmkp/customization/spm/templates/parts/filter.mak:105
+#: lmkp/customization/spm/templates/parts/filter.mak:107
 msgid "Click here to add a filter"
+msgstr ""
+
+#: lmkp/customization/spm/templates/parts/items/stakeholder_role.mak:1
+msgid "Stakeholder Role"
 msgstr ""
 
 #: lmkp/customization/spm/templates/parts/messages/activity_created_success.mak:1
@@ -989,6 +997,18 @@ msgid ""
 "The version you requested cannot be displayed. It is not valid according to "
 "the configuration of the application, which can be the case for older "
 "versions. Please select a newer version from the history page."
+msgstr ""
+
+#: lmkp/customization/spm/templates/parts/messages/one_of_involved_activities_cannot_be_reviewed.mak:1
+msgid ""
+"At least one of the involved Activities cannot be reviewed. Click on the icon"
+" next to the involvement for further details."
+msgstr ""
+
+#: lmkp/customization/spm/templates/parts/messages/one_of_involved_stakeholders_cannot_be_reviewed.mak:1
+msgid ""
+"At least one of the involved Stakeholders cannot be reviewed. Click on the "
+"icon next to the involvement for further details."
 msgstr ""
 
 #: lmkp/customization/spm/templates/parts/messages/stakeholder_created_success.mak:2
@@ -1065,10 +1085,6 @@ msgstr ""
 msgid "There are changes in this section"
 msgstr ""
 
-#: lmkp/customization/spm/templates/review/readonly/form.mak:69
-msgid "All Activities"
-msgstr ""
-
 #: lmkp/customization/spm/templates/stakeholders/grid.mak:27
 msgid "Show activities by clicking on a specific row."
 msgstr ""
@@ -1115,7 +1131,7 @@ msgstr ""
 
 #: lmkp/customization/spm/templates/stakeholders/review.mak:3
 #: lmkp/customization/spm/templates/stakeholders/review.mak:6
-msgid "Investor Moderation"
+msgid "Stakeholder Moderation"
 msgstr ""
 
 #: lmkp/customization/spm/templates/users/account_form.mak:3
