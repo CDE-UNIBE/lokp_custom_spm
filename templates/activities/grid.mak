@@ -60,7 +60,7 @@
         % if invfilter:
         <div class="alert alert-info">
             <i class="icon-filter"></i>&nbsp;
-            <strong>${_('Investor Filter')}</strong>: ${_('You are currently only seeing activities where stakeholder')}
+            <strong>${_('Stakeholder Filter')}</strong>: ${_('You are currently only seeing activities where stakeholder')}
             % for uid in invfilter:
                 <a href="${request.route_url('stakeholders_read_one', output='html', uid=uid)}">
                     ${uid[:6]}</a>

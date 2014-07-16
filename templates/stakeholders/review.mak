@@ -1,9 +1,9 @@
 <%inherit file="lmkp:customization/spm/templates/stakeholders/compare.mak" />
 
-<%def name="title()">${_('Investor Moderation')}</%def>
+<%def name="title()">${_('Stakeholder Moderation')}</%def>
 
 <%def name="topOfForm()">
-    <h3>${_('Investor Moderation')}</h3>
+    <h3>${_('Stakeholder Moderation')}</h3>
     <p class="id">${identifier}</p>
     <div class="row-fluid">
         <div class="span6">
