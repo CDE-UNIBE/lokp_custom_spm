@@ -108,7 +108,8 @@ fields:
     order: 2
     # [C-THG] 21: Reasons for involvement in Madagascar
     21:
-      order: 2
+      order: 1
+      showindetails: true
       # [TG]
       1:
         order: 1
@@ -267,7 +268,8 @@ fields:
     order: 3
     # [C-THG] 2: External factors influencing stakeholders activities in Madagascar
     2:
-      order: 3
+      order: 1
+      showindetails: true
       # [TG]
       1:
         order: 1
@@ -322,6 +324,9 @@ fields:
         # [K] 47: International dynamics and factors
         47:
           maintag: true
+    # [C-THG]
+    52:
+      order: 2
       involvement:
         name: "allinvolvements"
         roles: [1,2,3,4,5]
