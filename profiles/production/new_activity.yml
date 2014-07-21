@@ -188,6 +188,7 @@ fields:
     # [C-THG] 15: Why this exact location to implement this activity
     15:
       order: 5
+      showindetails: true
       # [TG]
       1:
         order: 1
@@ -238,6 +239,7 @@ fields:
     # [C-THG] 8: Provisioning ecosystem services
     8:
       order: 1
+      showindetails: true
       # [TG]
       1:
         order: 1
@@ -334,6 +336,7 @@ fields:
     # [C-THG] 9: Regulating ecosystem services
     9:
       order: 1
+      showindetails: true
       # [TG]
       1:
         order: 1
@@ -448,6 +451,7 @@ fields:
     # [C-THG] 10: Cultural ecosystem services
     10:
       order: 1
+      showindetails: true
       # [TG]
       1:
         order: 1
