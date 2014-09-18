@@ -14,6 +14,7 @@ fields:
           mandatory: true
           involvementoverview: 1
           gridcolumn: 1
+          default_search: true
       # [TG]
       2:
         order: 2
