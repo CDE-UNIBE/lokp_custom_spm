@@ -3,6 +3,10 @@
 <%def name="title()">${_('Activity Moderation')}</%def>
 
 <%def name="topOfForm()">
+
+    ## Session messages
+    <%include file="lmkp:templates/parts/sessionmessage.mak"/>
+
     <h3>${_('Activity Moderation')}</h3>
     <p class="id">${identifier}</p>
     <div class="row-fluid">
