@@ -126,7 +126,7 @@
                 </a>
             </li>
             <li class="grid-tab-right">
-                <a href="${request.route_url('changesets_read_latest', output='rss', _query=(('_LOCALE_', get_current_locale(request)),('_PROFILE_', get_current_profile(request))))}" data-toggle="tooltip" title="${_('View and subscribe to latest changes')}">
+                <a href="${request.route_url('changesets_read_latest', output='rss', _query=(('_LOCALE_', locale),('_PROFILE_', profile)))}" data-toggle="tooltip" title="${_('View and subscribe to latest changes')}">
                     <i class="icon-rss"></i>
                 </a>
             </li>
