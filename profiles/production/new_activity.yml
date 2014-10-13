@@ -8,6 +8,7 @@ fields:
       # [TG]
       1:
         order: 1
+        geometry: true
         # [K] 1: Name of activity
         1:
           maintag: true
