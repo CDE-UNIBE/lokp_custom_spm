@@ -112,9 +112,9 @@ if 'lmkp.use_piwik_analytics' in request.registry.settings:
                             <div class="row-fluid hidden-phone">
                                 <div class="span3 text-right">
                                     % if mode == 'demo':
-                                        <img src="/custom/img/logo_demo.png" class="lo_logo" alt="${_('Land Observatory')}" />
+                                        <img src="/custom/img/logo_demo.png" class="lo_logo" alt="${_('The ESAPP Stakeholder Platform North-East Madagascar')}" />
                                     % else:
-                                        <img src="/custom/img/logo.png" class="lo_logo" alt="${_('Land Observatory')}" />
+                                        <img src="/custom/img/logo.png" class="lo_logo" alt="${_('The ESAPP Stakeholder Platform North-East Madagascar')}" />
                                     % endif
                                 </div>
 
