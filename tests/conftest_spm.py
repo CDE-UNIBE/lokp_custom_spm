@@ -10,23 +10,25 @@ from lmkp.models import meta
 
 # Specify the INI configuration files for the tests to run.
 # The INI file must specifically point to an empty database!
-CUSTOMIZATION_TESTS_INI = 'spm_testing.ini'
+SPM_CUSTOMIZATION_TESTS_INI = 'spm_testing.ini'
+USERNAME = 'admin'
+PASSWORD = 'asdfasdf'
 
 
-def ini_is_not_set():
+def spm_ini_is_not_set():
     """
     Check if the INI file is present. Return True if it is not.
     """
     try:
-        open(CUSTOMIZATION_TESTS_INI)
+        open(SPM_CUSTOMIZATION_TESTS_INI)
         return False
     except:
         return True
 
-skip_if_no_ini = pytest.mark.skipif(
-    ini_is_not_set(),
+spm_skip_if_no_ini = pytest.mark.skipif(
+    spm_ini_is_not_set(),
     reason="INI (%s) for testing customization not found" %
-    CUSTOMIZATION_TESTS_INI)
+    SPM_CUSTOMIZATION_TESTS_INI)
 
 
 @pytest.fixture(scope='session')
@@ -34,7 +36,7 @@ def connection(request):
     """
     Fixture to set up a database connection and create the tables.
     """
-    settings = get_appsettings(CUSTOMIZATION_TESTS_INI)
+    settings = get_appsettings(SPM_CUSTOMIZATION_TESTS_INI)
     engine = engine_from_config(settings, 'sqlalchemy.')
 
     meta.Base.metadata.create_all(engine)
@@ -79,6 +81,6 @@ def customization_app(request, db_session):
     Use this fixture to retreive a TestApp object which can be used as self.app
     in the test functions.
     """
-    request.cls.app = TestApp(get_app(CUSTOMIZATION_TESTS_INI))
+    request.cls.app = TestApp(get_app(SPM_CUSTOMIZATION_TESTS_INI))
     request.cls.db_session = db_session
     return request
