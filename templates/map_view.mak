@@ -28,6 +28,9 @@ geomTaggroups = form_geomtaggroups(request)
     var mapValues = ${json.dumps(mapSymbolValues) | n};
     var mapCriteria = ${json.dumps(mapCriteria) | n};
     var areaNames = ${json.dumps(geomTaggroups['mainkeys']) | n};
+
+    ## For SPM, only one area exists which should always be named "Area"
+    areaNames[0][0] = '${_("Area")}';
     var allMapCriteria = ${json.dumps(mapSymbols) | n};
 
     ## JS Translation
@@ -72,7 +75,7 @@ geomTaggroups = form_geomtaggroups(request)
         <input name="q" id="search" class="search-query" placeholder="${_('search location')}" />
         <input value="Search" id="search-submit" />
     </form><br/>
-    
+
     <!-- Deals -->
     <div class="map-menu-deals">
         <h6 class="map-deals">
@@ -86,7 +89,7 @@ geomTaggroups = form_geomtaggroups(request)
                         <input class="input-top" type="checkbox" id="activityLayerToggle" checked="checked">
                         <label for="activityLayerToggle"></label>
                     </div>
-                    
+
                     <div id="map-deals-symbolization" class="dropdown context-layers-description">
                         ${_('Loading ...')}
                     </div>

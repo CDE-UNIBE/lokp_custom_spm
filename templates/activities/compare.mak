@@ -8,12 +8,12 @@
 
 <div class="container deal-moderate-content">
     <div class="content no-border">
-        
+
         % if errorMsg:
             ${errorMsg | n}
         % else:
             ${self.topOfForm()}
-            
+
             <div class="row-fluid">
                 ${form | n}
             </div>
@@ -29,7 +29,7 @@
 </div>
 
 <%def name="topOfForm()">
-        
+
     <h3>${_('Version Compare')}</h3>
     <p class="id">${identifier}</p>
 
@@ -146,15 +146,19 @@
 </%def>
 
 <%def name="bottom_tags()">
+    <script type="text/javascript">
+        var custom_area_names = ['${_("Area")}'];
+    </script>
+
     <%include file="lmkp:templates/map/mapform.mak" args="readonly=True, compare=True" />
     <script>
-        
+
         var identifier = '${identifier}';
         var refVersion = ${refVersion};
         var newVersion = ${newVersion};
 
         $(document).ready(function(){
-            
+
             % if refVersion and refMetadata:
                 $('#refMapLegendEntry').html('${_("Version")} ${refVersion} (${refMetadata["status"]})');
                 $('#refMapLegend').show();
@@ -163,7 +167,7 @@
                 $('#newMapLegendEntry').html('${_("Version")} ${newVersion} (${newMetadata["status"]})');
                 $('#newMapLegend').show();
             % endif
-            
+
             $('.accordion').on('hidden', function() {
                 $(this).find('.icon-chevron-up')
                     .removeClass("icon-chevron-up")
