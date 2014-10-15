@@ -88,9 +88,9 @@ if 'lmkp.use_piwik_analytics' in request.registry.settings:
                         <div class="logo">
                             <a href="${request.route_url('map_view')}">
                                 % if mode == 'demo':
-                                    <img src="/custom/img/logo_demo.png" alt="${_('Land Observatory')}" />
+                                    <img src="/custom/img/logo_demo.png" alt="${_('ESAPP Stakeholder Platform North-East Madagascar')}" />
                                 % else:
-                                    <img src="/custom/img/logo.png" alt="${_('Land Observatory')}" />
+                                    <img src="/custom/img/logo.png" alt="${_('ESAPP Stakeholder Platform North-East Madagascar')}" />
                                 % endif
                             </a>
                         </div>
