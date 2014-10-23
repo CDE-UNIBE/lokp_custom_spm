@@ -1,8 +1,6 @@
 <%
 from lmkp.utils import handle_query_string
-from lmkp.views.translation import get_profiles
 from lmkp.views.translation import get_languages
-profiles = sorted(get_profiles(), key=lambda profile: profile[0])
 languages = get_languages()
 selectedlanguage = languages[0]
 for l in languages:
@@ -29,7 +27,14 @@ if 'lmkp.use_piwik_analytics' in request.registry.settings:
         <meta name="content-language" content="${selectedlanguage[0]}" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <link rel="icon" type="image/ico" href="/custom/img/favicon.ico"/>
-        <title>${_('ESAPP Stakeholder Platform North-East Madagascar')}</title>
+        <title>
+            <%
+                try:
+                    context.write("%s - %s" % (self.title(), _("ESAPP Stakeholder Platform North-East Madagascar")))
+                except AttributeError:
+                    context.write(_("ESAPP Stakeholder Platform North-East Madagascar"))
+            %>
+        </title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 
@@ -80,21 +85,13 @@ if 'lmkp.use_piwik_analytics' in request.registry.settings:
             }
         </style>
 
-        <script type="text/javascript">
-
-            jQuery(document).bind('keyup', function(e) {
-
-                if(e.keyCode==39){
-                    jQuery('a.carousel-control.right').trigger('click');
-                }
-
-                else if(e.keyCode==37){
-                    jQuery('a.carousel-control.left').trigger('click');
-                }
-
-            });
-
-        </script>
+        ## Include the head tags of the child template if available.
+        <%
+            try:
+                self.head_tags()
+            except AttributeError:
+                pass
+        %>
 
     </head>
     <body>
@@ -102,77 +99,84 @@ if 'lmkp.use_piwik_analytics' in request.registry.settings:
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
 
-	    <div class="wrap">
+        <div class="wrap">
 
-	    <!-- Header  -->
+        <!-- Header  -->
 
                 <div id="main" class="clearfix">
 
                     <div class="navbar header_self">
                         <div class="container">
                             <div class="row-fluid hidden-phone">
-                                <div class="span3 text-right">
-                                    % if mode == 'demo':
-                                        <img src="/custom/img/logo_demo.png" class="lo_logo" alt="${_('The ESAPP Stakeholder Platform North-East Madagascar')}" />
-                                    % else:
-                                        <img src="/custom/img/logo.png" class="lo_logo" alt="${_('The ESAPP Stakeholder Platform North-East Madagascar')}" />
-                                    % endif
-                                </div>
+                              <div class="span3 text-right">
+                                <a href="${request.route_url('index')}">
+                                  % if mode == 'demo':
+                                      <img src="/custom/img/logo_demo.png" class="lo_logo" alt="${_('ESAPP Stakeholder Platform North-East Madagascar')}" />
+                                  % else:
+                                      <img src="/custom/img/logo.png" class="lo_logo" alt="${_('ESAPP Stakeholder Platform North-East Madagascar')}" />
+                                  % endif
+                                </a>
+                              </div>
 
-                                <div class="span6 landing-introduction">
-
-                                </div>
-                                <div class="user">
-                                    <ul class="nav nav-pills">
-                                        <li>
-                                            <div class="dropdown">
-                                                <a class="dropdown-toggle blacktemp" data-toggle="dropdown" href="#">
-                                                    ${selectedlanguage[1]}
-                                                    <b class="caret"></b>
-                                                </a>
-                                                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
-                                                    % for l in languages:
-                                                    <li class="cursor">
-                                                        <a href="${handle_query_string(request.url, add=[('_LOCALE_', l[0])])}">${l[1]}</a>
-                                                    </li>
-                                                    % endfor
-                                                </ul>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
+                              <div class="span6 landing-introduction">
+                                  <p>
+                                      ESAPP Stakeholder Platform North-East Madagascar
+                                  </p>
+                              </div>
+                              <div class="user">
+                                  <ul class="nav nav-pills">
+                                      <li>
+                                          <div class="dropdown">
+                                              <a class="dropdown-toggle blacktemp" data-toggle="dropdown" href="#">
+                                                  ${selectedlanguage[1]}
+                                                  <b class="caret"></b>
+                                              </a>
+                                              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                                                  % for l in languages:
+                                                  <li class="cursor">
+                                                      <a href="${handle_query_string(request.url, add=[('_LOCALE_', l[0])])}">${l[1]}</a>
+                                                  </li>
+                                                  % endfor
+                                              </ul>
+                                          </div>
+                                      </li>
+                                  </ul>
+                              </div>
                             </div>
                             <div class="row-fluid visible-phone">
-                                <div class="span3">
-                                    <a href="${request.route_url('index')}">
-                                        <img src="custom/img/logo.png" class="lo_logo" />
-                                    </a>
-                                </div>
-                                <div class="span6 landing-introduction">
-
-                                </div>
-                                <div class="span3">
-                                    <div class="user">
-                                        <ul class="nav nav-pills">
-                                            <li>
-                                                <div class="dropdown">
-                                                    <a class="dropdown-toggle blacktemp" data-toggle="dropdown" href="#">
-                                                        ${selectedlanguage[1]}
-                                                        <b class="caret"></b>
-                                                    </a>
-                                                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
-                                                        % for l in languages:
-                                                        <li class="cursor">
-                                                            <a href="${handle_query_string(request.url, add=[('_LOCALE_', l[0])])}">${l[1]}</a>
-                                                        </li>
-                                                        % endfor
-                                                    </ul>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
+                              <div class="span3">
+                                  <a href="${request.route_url('index')}">
+                                      <img src="custom/img/logo.png" class="lo_logo" />
+                                  </a>
+                              </div>
+                              <div class="span6 landing-introduction">
+                                  <p>
+                                      ESAPP Stakeholder Platform North-East Madagascar
+                                  </p>
+                              </div>
+                              <div class="span3">
+                                  <div class="user">
+                                      <ul class="nav nav-pills">
+                                          <li>
+                                              <div class="dropdown">
+                                                  <a class="dropdown-toggle blacktemp" data-toggle="dropdown" href="#">
+                                                      ${selectedlanguage[1]}
+                                                      <b class="caret"></b>
+                                                  </a>
+                                                  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                                                      % for l in languages:
+                                                      <li class="cursor">
+                                                          <a href="${handle_query_string(request.url, add=[('_LOCALE_', l[0])])}">${l[1]}</a>
+                                                      </li>
+                                                      % endfor
+                                                  </ul>
+                                              </div>
+                                          </li>
+                                      </ul>
+                                  </div>
+                              </div>
                             </div>
+
                         </div>
                     </div>
 
@@ -181,28 +185,9 @@ if 'lmkp.use_piwik_analytics' in request.registry.settings:
                     <div class="container">
                         <div class="content no-border">
 
-    <!--                        <div class="row-fluid">
-                                <div class="span offset1">
-                                    To start,  please
-                                </div>
-                            </div>-->
+                            ## Use the body content of the child template
+                            ${self.body()}
 
-                            <div class="row-fluid">
-                                <div clsas="span10 offset1">
-                                    <p>${_('Welcome to the Stakeholder Platform for North-East Madagascar!')}</p>
-                                    <p>
-                                        <strong>${_('The ESAPP Stakeholder Platform North-East Madagascar')} </strong>${_("is a project within the Eastern and Southern African Partnership Programme, designed to provide insight into stakeholder's activities regarding natural resource management in North-East Madagascar.")}
-                                    </p>
-                                    <div class="start">
-                                        <div class="btn-group">
-                                            <a href="/madagascar" class="btn btn-start">${_('Enter')}</a>
-                                            <a href="/madagascar" class="btn btn_favorite_right dropdown-toggle">
-                                                <i class="icon-caret-right"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -267,5 +252,13 @@ if 'lmkp.use_piwik_analytics' in request.registry.settings:
         </script>
         <!-- End Piwik Code -->
         % endif
+
+        ## Include the bottom tags of the child template if available.
+        <%
+            try:
+                self.bottom_tags()
+            except AttributeError:
+                pass
+        %>
     </body>
 </html>

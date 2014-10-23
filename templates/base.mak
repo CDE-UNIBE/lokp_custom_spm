@@ -27,7 +27,7 @@ if 'lmkp.use_piwik_analytics' in request.registry.settings:
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="content-language" content="${selectedlanguage[0]}" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-        <link rel="icon" type="image/ico" href="/favicon.ico"/>
+        <link rel="icon" type="image/ico" href="/custom/img/favicon.ico"/>
         <title>
             <%
                 try:
@@ -88,9 +88,9 @@ if 'lmkp.use_piwik_analytics' in request.registry.settings:
                         <div class="logo">
                             <a href="${request.route_url('map_view')}">
                                 % if mode == 'demo':
-                                    <img src="/custom/img/logo_demo.png" alt="${_('Land Observatory')}" />
+                                    <img src="/custom/img/logo_demo.png" alt="${_('ESAPP Stakeholder Platform North-East Madagascar')}" />
                                 % else:
-                                    <img src="/custom/img/logo.png" alt="${_('Land Observatory')}" />
+                                    <img src="/custom/img/logo.png" alt="${_('ESAPP Stakeholder Platform North-East Madagascar')}" />
                                 % endif
                             </a>
                         </div>

@@ -24,6 +24,7 @@
 <script type="text/javascript">
     var identifier = '${uid}';
     var version = ${version};
+    var custom_area_names = ['${_("Area")}'];
 </script>
 
 <%include file="lmkp:templates/map/mapform.mak" args="readonly=True" />
