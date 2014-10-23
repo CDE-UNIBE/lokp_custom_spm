@@ -45,21 +45,23 @@
     var group_activities_by = "${_('Group activities by:')}";
     var show_attribute = "${_('Show attribute:')}";
     var chart_data = {
-      item: 'Activity',
-      attributes: {
+      'item': 'Activity',
+      'attributes': {
         'Activity': 'count'
       },
-      groupable: [
-        ['Main focus of activity'],
-        ['Detailed focus of activity']
-      ]
+      'translate': {
+        'keys': [
+          ['Main focus of activity'],
+          ['Detailed focus of activity']
+        ]
+      }
     };
     var attribute_names = [
       "${_('Activities')}"
     ];
 
-    var current_group_key = "${attr}";
-    chart_data['group_by'] = chart_data["groupable"][current_group_key];
+    var group_key = "${attr}";
+    chart_data['group_by'] = chart_data['translate']['keys'][group_key];
 
     d3.xhr('${request.route_url("evaluation")}')
       .header("Content-Type", "application/json")
@@ -71,6 +73,7 @@
             return console.warn(data['msg']);
           }
           $('#loadingRow').hide();
+          updateContent(data);
           visualize(data.data);
         }
       );

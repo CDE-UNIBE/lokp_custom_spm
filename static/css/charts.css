@@ -8,10 +8,13 @@
     stroke: #000;
     shape-rendering: crispEdges;
 }
+.axis text, .bar {
+    cursor: pointer;
+}
 .bar {
     fill: #bf9030;
 }
-.bar:hover {
+.bar:hover, .bar.hover {
     fill: #f4d494;
 }
 
