@@ -219,8 +219,6 @@ if 'lmkp.use_piwik_analytics' in request.registry.settings:
                         # - url
                         # - name
                         footer = [
-                            [request.route_url('faq_view'), _('FAQ')],
-                            [request.route_url('about_view'), _('About')],
                             [request.route_url('partners_view'), _('Partners & Donors')]
                         ]
                     %>
