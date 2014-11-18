@@ -9,4 +9,4 @@ instance of the Land Observatory Knowledge Platform
 
 Don't forget to adapt the settings in the application's .ini file.
 
-Current version: v0.9.8a, corresponding to LOKP v0.9.8a.
+Current version: v0.9.8b, corresponding to LOKP v0.9.8b.
