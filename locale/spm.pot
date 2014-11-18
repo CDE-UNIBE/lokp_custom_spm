@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LMKP_Customization 0.0.0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-11-06 12:14+0100\n"
+"POT-Creation-Date: 2014-11-18 16:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -144,7 +144,15 @@ msgstr ""
 
 #: lmkp/customization/spm/templates/base.mak:227
 #: lmkp/customization/spm/templates/base_no_menu.mak:206
+#: lmkp/customization/spm/templates/faq_view.mak:3
+#: lmkp/customization/spm/templates/faq_view.mak:14
 #: lmkp/customization/spm/templates/landing_page.mak:222
+msgid "FAQ"
+msgstr ""
+
+#: lmkp/customization/spm/templates/base.mak:228
+#: lmkp/customization/spm/templates/base_no_menu.mak:207
+#: lmkp/customization/spm/templates/landing_page.mak:223
 #: lmkp/customization/spm/templates/partners_view.mak:3
 #: lmkp/customization/spm/templates/partners_view.mak:8
 msgid "Partners & Donors"
@@ -208,155 +216,33 @@ msgstr ""
 msgid "Download Stakeholders"
 msgstr ""
 
-#: lmkp/customization/spm/templates/faq_view.mak:3
-#: lmkp/customization/spm/templates/faq_view.mak:14
-msgid "FAQ"
-msgstr ""
-
 #: lmkp/customization/spm/templates/faq_view.mak:17
-#: lmkp/customization/spm/templates/faq_view.mak:28
-msgid "Why are there observatories in only five countries?"
-msgstr ""
-
-#: lmkp/customization/spm/templates/faq_view.mak:18
-#: lmkp/customization/spm/templates/faq_view.mak:32
-msgid "Who \"owns\" each observatory in the five pilot countries?"
-msgstr ""
-
-#: lmkp/customization/spm/templates/faq_view.mak:19
-#: lmkp/customization/spm/templates/faq_view.mak:36
-msgid "Can I comment on a land deal?"
-msgstr ""
-
-#: lmkp/customization/spm/templates/faq_view.mak:20
-#: lmkp/customization/spm/templates/faq_view.mak:40
-msgid "How do I submit information on a land deal?"
-msgstr ""
-
 #: lmkp/customization/spm/templates/faq_view.mak:21
-#: lmkp/customization/spm/templates/faq_view.mak:52
-msgid "Can I submit information on a land deal even if I am in a different country?"
+msgid "How do I submit information on an activity?"
 msgstr ""
 
 #: lmkp/customization/spm/templates/faq_view.mak:22
-#: lmkp/customization/spm/templates/faq_view.mak:60
-msgid "What about polygons and land areas?"
+msgid ""
+"Once you are logged in, you can fill out the form to add a new activity or "
+"edit an existing one. Do you need help filling out the form? We created a "
+"manual to help you get started."
 msgstr ""
 
 #: lmkp/customization/spm/templates/faq_view.mak:23
-#: lmkp/customization/spm/templates/faq_view.mak:64
-msgid "How can I download data?"
+msgid "How to add a new activity"
 msgstr ""
 
 #: lmkp/customization/spm/templates/faq_view.mak:24
-#: lmkp/customization/spm/templates/faq_view.mak:68
-msgid "Do you protect my privacy?"
-msgstr ""
-
-#: lmkp/customization/spm/templates/faq_view.mak:29
 msgid ""
-"We are piloting this project in five countries. More than just testing "
-"software, this requires partners to design crowdsourcing campaigns and "
-"organise multi-stakeholder platforms to manage the observatories. These are "
-"all very intensive processes and need time. We plan to scale, and seed "
-"observatories in other countries in the near future."
+"After you submit, moderators will review and approve your report. New "
+"activities will not be approved until all of the mandatory attributes are "
+"completed."
 msgstr ""
 
-#: lmkp/customization/spm/templates/faq_view.mak:33
-msgid ""
-"We have co-developed this software with partners in country, and we are still"
-" firming up formal arrangements with partner organisations, and where "
-"possible with governments. Generally speaking, each observatory will have its"
-" own governance structure and moderation team and procedures. More "
-"information will be made available soon about each country."
-msgstr ""
-
-#: lmkp/customization/spm/templates/faq_view.mak:37
-msgid ""
-"Anybody, even anonymous, non-logged in users can comment on a land deal. "
-"These comments will be subject to the rules of moderation, unique to each "
-"observatory."
-msgstr ""
-
-#: lmkp/customization/spm/templates/faq_view.mak:41
-msgid ""
-"If you have information about a land deal in one of the five pilot countries,"
-" you can submit information about one or more attributes of this deal. You "
-"can also submit a new land deal if the one you are concerned with does not "
-"appear on the map."
-msgstr ""
-
-#: lmkp/customization/spm/templates/faq_view.mak:42
-msgid "You will need to"
-msgstr ""
-
-#: lmkp/customization/spm/templates/faq_view.mak:42
-msgid "register"
-msgstr ""
-
-#: lmkp/customization/spm/templates/faq_view.mak:42
-msgid "(giving us your email) and"
-msgstr ""
-
-#: lmkp/customization/spm/templates/faq_view.mak:42
-msgid "log-in"
-msgstr ""
-
-#: lmkp/customization/spm/templates/faq_view.mak:43
-msgid ""
-"After you submit, moderators will review and approve your report. New deals "
-"will not be approved until all of the mandatory attributes are completed."
-msgstr ""
-
-#: lmkp/customization/spm/templates/faq_view.mak:49
+#: lmkp/customization/spm/templates/faq_view.mak:30
 msgid ""
 "Once your report is reviewed and approved, it is public for the whole world "
 "to see."
-msgstr ""
-
-#: lmkp/customization/spm/templates/faq_view.mak:53
-msgid ""
-"Yes, but it will be reviewed and approved by moderators. At the moment, we "
-"ask that your account is connected to a particular country."
-msgstr ""
-
-#: lmkp/customization/spm/templates/faq_view.mak:56
-msgid "Will this application display polygons and land areas?"
-msgstr ""
-
-#: lmkp/customization/spm/templates/faq_view.mak:57
-msgid ""
-"Yes, these functions are in development and should be ready soon, as well as "
-"data downloads."
-msgstr ""
-
-#: lmkp/customization/spm/templates/faq_view.mak:61
-msgid ""
-"You can view polygons and land areas on the map by activating the appropriate"
-" layers in the map legend. To add new polygons or edit the shape of existing "
-"areas, we wrote a plugin for QGIS which you can use."
-msgstr ""
-
-#: lmkp/customization/spm/templates/faq_view.mak:61
-msgid "Please refer to the documentation of the QGIS plugin for more information."
-msgstr ""
-
-#: lmkp/customization/spm/templates/faq_view.mak:65
-msgid ""
-"The download functionality is currently under development and should be ready"
-" soon."
-msgstr ""
-
-#: lmkp/customization/spm/templates/faq_view.mak:69
-msgid ""
-"All defaults are set to safeguard user privacy. To comment, you need not give"
-" any personal information, although providing it may enhance your "
-"credibility. To log-in and submit data, all you need to provide is an email "
-"address. Currently, metadata about your submissions is stored on the servers "
-"of the Centre for Development and Environment - University of Bern and are "
-"only kept for reference: your personal information will not be shared with "
-"others or re-used for any purposes except for possible verification of "
-"submitted information."
 msgstr ""
 
 #: lmkp/customization/spm/templates/landing_page.mak:116
